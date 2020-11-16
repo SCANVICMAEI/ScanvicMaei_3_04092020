@@ -60,6 +60,7 @@ header {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   align-items: center;
+  font-family: 'Roboto', sans-serif;
   background-color: #F2F2F2;
 }
 
@@ -109,6 +110,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-family: 'Roboto', sans-serif;
 }
 
 .fonctionnement i {
@@ -165,6 +167,7 @@ a {
 .fonctionnement-nav li:hover {
   -webkit-box-shadow: 5px 20px 5px 0px #656565;
           box-shadow: 5px 20px 5px 0px #656565;
+  border-radius: 20px;
 }
 
 .restaurants {
@@ -182,12 +185,14 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-family: 'Roboto', sans-serif;
   background-color: #F2F2F2;
 }
 
 .restaurants .restaurants-article:hover {
   -webkit-box-shadow: 5px 20px 5px 0px #656565;
           box-shadow: 5px 20px 5px 0px #656565;
+  border-radius: 20px;
 }
 
 .restaurants img {
@@ -203,9 +208,12 @@ article {
   -webkit-box-shadow: 5px 10px 5px 0px #656565;
           box-shadow: 5px 10px 5px 0px #656565;
   border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.footer-titre {
+.footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -215,9 +223,15 @@ article {
           flex-direction: column;
   background-color: black;
   color: white;
+  font-family: 'Roboto', sans-serif;
 }
 
-.footer-titre a {
+.footer a {
   color: white;
+}
+
+footer h3 {
+  font-family: 'Shrikhand' , sans-serif;
+  font-weight: 400;
 }
 /*# sourceMappingURL=style.css.map */

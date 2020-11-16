@@ -43,4 +43,16 @@ display: flex;
 
 @mixin box-shadow-hover{
     box-shadow: 5px 20px 5px 0px #656565; 
+    border-radius: 20px;
+}
+
+
+@mixin font-Roboto {
+    font-family:'Roboto', sans-serif;
+}
+
+@mixin font-Shrikhand
+{
+    font-family: 'Shrikhand' , sans-serif;
+    font-weight: 400;
 }

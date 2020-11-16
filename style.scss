@@ -44,7 +44,9 @@ header
   
  @include flex;
  @include size-pages;
+ @include font-Roboto;
  background-color:#F2F2F2;
+
   nav{
    width:100%;
    background-color:#D9D9D9;
@@ -76,6 +78,7 @@ a
 
 .fonctionnement {
   @include size-pages;
+  @include font-Roboto;
 
   i{
     margin-right: 1rem;
@@ -119,6 +122,7 @@ a
 
 .restaurants{
   @include size-pages;
+  @include font-Roboto;
   background-color:#F2F2F2;
 
  .restaurants-article:hover{
@@ -133,15 +137,23 @@ a
 article{
   margin-bottom: 2rem;
   @include box-shadow;
+  display: flex;
+ 
 }
 
 //footer
-.footer-titre {      
+.footer {      
   display: flex;
   flex-direction: column;
   background-color:black;
   color: white;
+  @include font-Roboto;
   a{
     color: white;
   }
 }
+
+footer h3{
+  @include font-Shrikhand;
+}
+
