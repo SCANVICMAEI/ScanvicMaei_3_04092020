@@ -1,6 +1,6 @@
 h2 {
   font-weight: 900;
-  font-size: large;
+  font-size: 1.5rem;
   margin-bottom: 1rem;
   margin-top: 1rem;
 }
@@ -145,7 +145,7 @@ a {
   counter-increment: li;
 }
 
-.fonctionnement-nav li::before {
+.fonctionnement-nav li li::before {
   content: counter(li);
   color: white;
   background-color: #9356DC;
@@ -157,9 +157,14 @@ a {
   margin-left: -2em;
 }
 
-.fonctionnement-nav ol {
+.fonctionnement-nav li li::before ol {
   list-style: none;
   counter-reset: li;
+}
+
+.fonctionnement-nav li:hover {
+  -webkit-box-shadow: 5px 20px 5px 0px #656565;
+          box-shadow: 5px 20px 5px 0px #656565;
 }
 
 .restaurants {
@@ -178,6 +183,11 @@ a {
       -ms-flex-align: center;
           align-items: center;
   background-color: #F2F2F2;
+}
+
+.restaurants .restaurants-article:hover {
+  -webkit-box-shadow: 5px 20px 5px 0px #656565;
+          box-shadow: 5px 20px 5px 0px #656565;
 }
 
 .restaurants img {
@@ -209,10 +219,5 @@ article {
 
 .footer-titre a {
   color: white;
-  margin-top: 0.5rem;
-}
-
-.footer-titre i {
-  margin-right: 0.5rem;
 }
 /*# sourceMappingURL=style.css.map */

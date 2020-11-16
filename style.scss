@@ -6,7 +6,7 @@
 
 h2{
   font-weight: 900;;
-  font-size: large;
+  font-size: 1.5rem;
   margin-bottom: 1rem;
   margin-top: 1rem;
 }
@@ -74,8 +74,7 @@ a
   color: black;
 }
 
-.fonctionnement 
-{
+.fonctionnement {
   @include size-pages;
 
   i{
@@ -92,33 +91,43 @@ a
   li{
     @include button-fonctionnement;
     @include box-shadow;
-    counter-increment: li
-  }
+    counter-increment: li;
+    
   li::before {content: counter(li); 
     color:white;
     background-color: $couleur-primaire;
     text-align: center;
     border-radius: 50%;
     padding: 2.5px;
-    display: inline-block; width: 1em;
-    margin-left: -2em
-    }
+    display: inline-block; 
+    width: 1em;
+    margin-left: -2em;
+    
   ol {
-    list-style: none; counter-reset: li}
+    list-style: none; counter-reset: li   
+    }
+ }
+}
+}
 
+ .fonctionnement-nav li:hover { 
+
+  @include box-shadow-hover;
 }
 
 //section restaurants
 
-.restaurants
-{
+.restaurants{
   @include size-pages;
   background-color:#F2F2F2;
 
+ .restaurants-article:hover{
+   @include box-shadow-hover
+  }
+
  img { 
     @include img-size;
-   }
-   
+   } 
 }
 
 article{
@@ -126,19 +135,13 @@ article{
   @include box-shadow;
 }
 
-
 //footer
-
-.footer-titre{
+.footer-titre {      
   display: flex;
   flex-direction: column;
-  background-color: black;
-  color:white;
+  background-color:black;
+  color: white;
   a{
     color: white;
-    margin-top: 0.5rem;
-  }
-  i{
-    margin-right: 0.5rem;
   }
 }

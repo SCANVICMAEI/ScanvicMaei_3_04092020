@@ -40,3 +40,7 @@ display: flex;
     box-shadow: 5px 10px 5px 0px #656565;
     border-radius: 20px;
 }
+
+@mixin box-shadow-hover{
+    box-shadow: 5px 20px 5px 0px #656565; 
+}
