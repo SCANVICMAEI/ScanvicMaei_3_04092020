@@ -19,6 +19,7 @@ h3{
   font-size: large;
   margin-top: 0.5rem;
   margin-left: 1rem;
+  margin-bottom: 0.4rem;
 }
 
 p
@@ -188,7 +189,6 @@ footer h3{
  margin: auto;
 }
 
-
 main{
   @include size-pages;
   background-color:#F2F2F2;
@@ -198,9 +198,16 @@ main{
 
 section li{
 @include box-choix;
+i{
+  display: none;
+}
 }
 
 .titres{
   @include font-Shrikhand;
   font-size: 1.5rem;
+}
+
+.photos-restaurant{
+  display: flex;
 }
