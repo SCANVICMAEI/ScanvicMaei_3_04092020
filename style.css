@@ -1,0 +1,218 @@
+h2 {
+  font-weight: 900;
+  font-size: large;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+h3 {
+  font-weight: 800;
+  font-size: large;
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+}
+
+p {
+  margin-left: 1rem;
+}
+
+header {
+  width: 90%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo {
+  height: 2rem;
+  width: 9rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.localisation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  align-items: center;
+  background-color: #F2F2F2;
+}
+
+.localisation nav {
+  width: 100%;
+  background-color: #D9D9D9;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+.localisation input {
+  background-color: #D9D9D9;
+}
+
+.localisation-input {
+  background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  color: white;
+  padding: 0.9rem;
+  margin-bottom: 2rem;
+  -webkit-box-shadow: 5px 10px 5px 0px #656565;
+          box-shadow: 5px 10px 5px 0px #656565;
+  border-radius: 20px;
+  margin-top: 2rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.fonctionnement {
+  width: 90%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fonctionnement i {
+  margin-right: 1rem;
+  margin-left: 1rem;
+  color: #9356DC;
+}
+
+.fonctionnement-nav {
+  width: 90%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fonctionnement-nav li {
+  background-color: #f2f2f2;
+  border-radius: 30px;
+  padding: 0.9rem;
+  margin-bottom: 2rem;
+  -webkit-box-shadow: 5px 10px 5px 0px #656565;
+          box-shadow: 5px 10px 5px 0px #656565;
+  border-radius: 20px;
+  counter-increment: li;
+}
+
+.fonctionnement-nav li::before {
+  content: counter(li);
+  color: white;
+  background-color: #9356DC;
+  text-align: center;
+  border-radius: 50%;
+  padding: 2.5px;
+  display: inline-block;
+  width: 1em;
+  margin-left: -2em;
+}
+
+.fonctionnement-nav ol {
+  list-style: none;
+  counter-reset: li;
+}
+
+.restaurants {
+  width: 90%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #F2F2F2;
+}
+
+.restaurants img {
+  height: 8rem;
+  width: 20rem;
+  border-radius: 15px 15px 0px 0px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+article {
+  margin-bottom: 2rem;
+  -webkit-box-shadow: 5px 10px 5px 0px #656565;
+          box-shadow: 5px 10px 5px 0px #656565;
+  border-radius: 20px;
+}
+
+.footer-titre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: black;
+  color: white;
+}
+
+.footer-titre a {
+  color: white;
+  margin-top: 0.5rem;
+}
+
+.footer-titre i {
+  margin-right: 0.5rem;
+}
+/*# sourceMappingURL=style.css.map */

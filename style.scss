@@ -1,0 +1,144 @@
+
+@import "mixin";
+@import "variables";
+
+//commun
+
+h2{
+  font-weight: 900;;
+  font-size: large;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+h3{
+  font-weight: 800;;
+  font-size: large;
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+}
+
+p
+{
+  margin-left: 1rem;
+}
+
+
+//header
+
+header 
+{
+  @include size-pages;
+}
+
+.logo{
+   height: 2rem;
+   width:9rem;
+   margin-bottom: 1rem;
+   margin-top: 1rem;
+}
+
+//section localisation 
+
+.localisation{
+  
+ @include flex;
+ @include size-pages;
+ background-color:#F2F2F2;
+  nav{
+   width:100%;
+   background-color:#D9D9D9;
+   padding-top: 1rem;
+   padding-bottom: 1rem;
+   text-align: center;
+  }
+   input{
+     background-color:#D9D9D9 ;
+   }
+ }
+
+
+.localisation-input
+{
+  @include button-localisation;
+  @include box-shadow;
+  margin-top:2rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+//section fonctionnement
+a
+{
+  text-decoration: none;
+  color: black;
+}
+
+.fonctionnement 
+{
+  @include size-pages;
+
+  i{
+    margin-right: 1rem;
+    margin-left: 1rem;
+    color:$couleur-primaire ;
+  }
+}
+
+.fonctionnement-nav
+{
+  @include size-pages;
+
+  li{
+    @include button-fonctionnement;
+    @include box-shadow;
+    counter-increment: li
+  }
+  li::before {content: counter(li); 
+    color:white;
+    background-color: $couleur-primaire;
+    text-align: center;
+    border-radius: 50%;
+    padding: 2.5px;
+    display: inline-block; width: 1em;
+    margin-left: -2em
+    }
+  ol {
+    list-style: none; counter-reset: li}
+
+}
+
+//section restaurants
+
+.restaurants
+{
+  @include size-pages;
+  background-color:#F2F2F2;
+
+ img { 
+    @include img-size;
+   }
+   
+}
+
+article{
+  margin-bottom: 2rem;
+  @include box-shadow;
+}
+
+
+//footer
+
+.footer-titre{
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  color:white;
+  a{
+    color: white;
+    margin-top: 0.5rem;
+  }
+  i{
+    margin-right: 0.5rem;
+  }
+}

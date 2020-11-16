@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css"/>
+  <link href="fonts/css/all.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+  <title>Oh My Food</title>
+  <meta name="description" content="">
+</head>  
+
+<body>
+    <header> <!--logo-->
+
+     <img class="logo" src="IMG/ohmyfood.png" alt="logo- ohmyfood">
+
+    </header>
+
+  <section> <!--bloc recherche localisation-->
+
+    <div class="localisation">
+
+      <nav class="localisation-recherche-ville" >
+       <form method="post" action="traitement.php">
+          <i class="fas fa-map-marker-alt"></i>
+           <input type="text" name="ville" placeholder="Paris,Bellevilles" style="border: hidden; border: 0" maxlength="10"/>
+        </form>
+      </nav>
+      <p class="localisation-texte"><h2> Réservez le menu qui vous convient</h2> Découvrer des restaurant d'exception, séléctionnés par nos soins.</p>
+
+      <a class="localisation-input" href="#"> Explorer nos restaurants</a>
+
+    </div>
+    
+
+  </section>
+
+  <section> <!--bloc explication fonctionnement-->
+
+    <div class="fonctionnement">
+
+      <h2 class="fonctionnement-titre"> Fonctionnement</h2>
+
+      <div class="fonctionnement-nav">
+        <ol>
+         <li><a href="#"><i class="fas fa-mobile-alt"></i> Choisissez un restaurant </a></li>
+         <li><a href="#"><i class="fas fa-list-ul"></i> Composez votre menu </a></li>
+         <li><a href="#"><i class="fas fa-store"></i> Dégustez au restaurant </a></li>
+        </ol>
+      <div>
+
+    </div>
+
+  </section>
+
+  <main>
+
+    <section><!--bloc restaurants-->
+
+      <div class="restaurants">
+
+        <h2 class="restaurants-titre">Restaurants</h2>
+
+        <article><a href="#" class="restaurants-article"> <img src="IMG/la-palette-du-gout.jpg" alt="Photos Restaurant"> <h3>La palette du goût</h3> </i><p>Ménilmontant</p><i class="far fa-heart"></i></a></article>
+        <article><a href="#" class="restaurants-article"> <img src="IMG/la-note-enchantée.jpg" alt="Photos Restaurant"> <h3>La note enchantée</h3><p> Charonne</p><i class="far fa-heart"></i></a></article>
+        <article><a href="#"class="restaurants-article"> <img src="IMG/a-la-française.jpg" alt="Photos Restaurant"> <h3>A la française</h3><p> Cité Rouge</p><i class="far fa-heart"></i></a></article>
+        <article><a href="#"class="restaurants-article"> <img src="IMG/le-délice-des-sens.jpg" alt="Photos Restaurant"> <h3>Le délice des sens</h3> <p>Folie-Méricourt</p><i class="far fa-heart"></i></a></article>
+
+      </div>
+
+    </section>   
+
+  </main>
+
+  <footer class="footer-titre" >
+
+    <h3> ohmyfood</h3>
+
+    <a href="#" class="footer-lien-avec-logo"><i class="fas fa-utensils"></i>Proposer un restaurant</a>
+    <a href="#"class="footer-lien-avec-logo"><i class="fas fa-hands-helping"></i>Devenir partenaire</a>
+    <a href="#"class="footer-lien-sans-logo">Mention légales</a>
+    <a href="#"class="footer-lien-sans-logo">Contacts</a>
+ 
+  </footer>
+
+
+</body>

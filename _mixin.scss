@@ -1,0 +1,42 @@
+@mixin flex {
+display: flex;
+ justify-content: center;
+ align-items:center;
+}
+
+@mixin size-pages {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+@mixin img-size {
+ height: 8rem;
+ width: 20rem;
+ border-radius: 15px 15px 0px 0px ;
+ object-fit: cover;
+}
+
+
+@mixin button-localisation {
+ background: linear-gradient(to bottom right,#FF79DA ,#9356DC);
+ color: white;
+ padding: 0.9rem;
+ margin-bottom: 2rem;
+}
+
+@mixin button-fonctionnement{
+
+ background-color: #f2f2f2;
+ border-radius: 30px;
+ padding: 0.9rem;
+ margin-bottom: 2rem;
+}
+
+@mixin box-shadow {
+    box-shadow: 5px 10px 5px 0px #656565;
+    border-radius: 20px;
+}
