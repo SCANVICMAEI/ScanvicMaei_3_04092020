@@ -56,3 +56,12 @@ display: flex;
     font-family: 'Shrikhand' , sans-serif;
     font-weight: 400;
 }
+
+@mixin box-choix {
+    background-color: white;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 1rem;
+    text-align: left;
+    width: 20rem;
+}

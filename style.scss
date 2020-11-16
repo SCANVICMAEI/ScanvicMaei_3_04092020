@@ -2,6 +2,9 @@
 @import "mixin";
 @import "variables";
 
+
+//PAGE ACCEUIL
+
 //commun
 
 h2{
@@ -60,7 +63,7 @@ header
  }
 
 
-.localisation-input
+.button-pink
 {
   @include button-localisation;
   @include box-shadow;
@@ -175,3 +178,29 @@ footer h3{
 
 }
 
+// PAGE RESTAURANTS
+
+.photos-restaurant 
+{
+  object-fit: cover;
+  height: 15rem;
+ width: 15rem;
+ margin: auto;
+}
+
+
+main{
+  @include size-pages;
+  background-color:#F2F2F2;
+  border-top-left-radius: 8rem;
+  border-top-right-radius: 8rem;
+}
+
+section li{
+@include box-choix;
+}
+
+.titres{
+  @include font-Shrikhand;
+  font-size: 1.5rem;
+}
