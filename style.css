@@ -147,7 +147,7 @@ a {
   counter-increment: li;
 }
 
-.fonctionnement-nav li li::before {
+.fonctionnement-nav li::before {
   content: counter(li);
   color: white;
   background-color: #9356DC;
@@ -159,7 +159,7 @@ a {
   margin-left: -2em;
 }
 
-.fonctionnement-nav li li::before ol {
+.fonctionnement-nav ol {
   list-style: none;
   counter-reset: li;
 }
@@ -168,6 +168,8 @@ a {
   -webkit-box-shadow: 5px 20px 5px 0px #656565;
           box-shadow: 5px 20px 5px 0px #656565;
   border-radius: 20px;
+  background-color: #9356DC;
+  opacity: 0.5;
 }
 
 .restaurants {
@@ -213,6 +215,20 @@ article {
   display: flex;
 }
 
+.restaurants-article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.restaurants-article .fa-heart:hover {
+  color: linear-gradient(#9356DC, #FF79DA);
+}
+
 .footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -228,10 +244,12 @@ article {
 
 .footer a {
   color: white;
+  margin-top: 0.5rem;
 }
 
 footer h3 {
   font-family: 'Shrikhand' , sans-serif;
   font-weight: 400;
+  margin-left: 0;
 }
 /*# sourceMappingURL=style.css.map */

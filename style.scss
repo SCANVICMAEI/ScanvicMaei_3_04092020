@@ -95,8 +95,9 @@ a
     @include button-fonctionnement;
     @include box-shadow;
     counter-increment: li;
-    
-  li::before {content: counter(li); 
+  }
+  li::before {
+    content: counter(li); 
     color:white;
     background-color: $couleur-primaire;
     text-align: center;
@@ -105,17 +106,19 @@ a
     display: inline-block; 
     width: 1em;
     margin-left: -2em;
-    
+  }
   ol {
     list-style: none; counter-reset: li   
     }
- }
-}
+
 }
 
  .fonctionnement-nav li:hover { 
 
   @include box-shadow-hover;
+  background-color:$couleur-primaire ;
+  opacity: 0.5;
+ 
 }
 
 //section restaurants
@@ -124,6 +127,7 @@ a
   @include size-pages;
   @include font-Roboto;
   background-color:#F2F2F2;
+
 
  .restaurants-article:hover{
    @include box-shadow-hover
@@ -138,8 +142,18 @@ article{
   margin-bottom: 2rem;
   @include box-shadow;
   display: flex;
- 
 }
+
+.restaurants-article{
+  display: flex;
+  flex-direction: column;
+  }
+
+.restaurants-article .fa-heart:hover{ 
+color:linear-gradient(#9356DC,#FF79DA);
+}
+
+
 
 //footer
 .footer {      
@@ -148,12 +162,16 @@ article{
   background-color:black;
   color: white;
   @include font-Roboto;
+  
   a{
     color: white;
+    margin-top:0.5rem ;
   }
 }
 
 footer h3{
   @include font-Shrikhand;
+  margin-left: 0;
+
 }
 
