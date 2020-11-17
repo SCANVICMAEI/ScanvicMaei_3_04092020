@@ -88,8 +88,15 @@ a{
     margin-right: 1rem;
     margin-left: 1rem;
     color:grey ;
+    
+    i:hover{
+      color:$couleur-primaire;
+    }
   }
 }
+
+
+
 
 .fonctionnement-nav
 {
@@ -118,8 +125,10 @@ a{
 
 .fonctionnement-nav li:hover {   //ATTENTION PROBLEME
   @include box-shadow-hover;
- background-color:$couleur-primaire ;
+ background-color: rgba(147, 86, 220, 0.4);
+ background-clip: padding-box;
 }
+
 
 //section restaurants
 
@@ -166,15 +175,17 @@ article{
   font-size: 1.2rem;
   }
 
-  i.far.fa-heart :hover{   // ATTENTION PRBL
- background: linear-gradient($couleur-primaire $couleur-secondaire)
-  }
 }
+
+i.far.fa-heart:hover{   
+  background:linear-gradient($couleur-primaire $couleur-secondaire);
+  background-clip: text;
+   }
 
 
 //footer
 
-.footer {      
+.footer-container {      
   display: flex;
   flex-direction: column;
   background-color:black;
@@ -186,10 +197,16 @@ article{
   }
 }
 
-footer h3{
+.footer-container h3{
   @include font-Shrikhand;
   margin-left: 0;
 }
+
+
+.footer-container a :hover{
+  color:$couleur-primaire;
+}
+
 
 // PAGE RESTAURANTS
 

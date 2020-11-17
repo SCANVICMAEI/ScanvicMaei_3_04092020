@@ -121,6 +121,10 @@ a {
   color: grey;
 }
 
+.fonctionnement i i:hover {
+  color: #9356DC;
+}
+
 .fonctionnement-nav {
   width: 90%;
   margin: auto;
@@ -170,7 +174,8 @@ a {
   -webkit-box-shadow: 5px 20px 5px 0px #656565;
           box-shadow: 5px 20px 5px 0px #656565;
   border-radius: 20px;
-  background-color: #9356DC;
+  background-color: rgba(147, 86, 220, 0.4);
+  background-clip: padding-box;
 }
 
 .restaurants {
@@ -253,12 +258,13 @@ article {
   font-size: 1.2rem;
 }
 
-.restaurants-description i.far.fa-heart :hover {
+i.far.fa-heart:hover {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(#FF79DA, #9356DC));
   background: linear-gradient(#9356DC #FF79DA);
+  background-clip: text;
 }
 
-.footer {
+.footer-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -271,15 +277,19 @@ article {
   font-family: 'Roboto', sans-serif;
 }
 
-.footer a {
+.footer-container a {
   color: white;
   margin-top: 0.5rem;
 }
 
-footer h3 {
+.footer-container h3 {
   font-family: 'Shrikhand' , sans-serif;
   font-weight: 400;
   margin-left: 0;
+}
+
+.footer-container a :hover {
+  color: #9356DC;
 }
 
 .photos-restaurant {
