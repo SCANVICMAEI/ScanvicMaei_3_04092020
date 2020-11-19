@@ -1,0 +1,35 @@
+
+
+@media (min-width: 576px) and (max-width:767.98px)
+{
+
+    //PAGE ACCEUIL
+
+
+   header{
+        background-color: blue;
+        @include responsive-small;
+    }
+
+.localisation{
+    @include responsive-small;
+}
+
+.fonctionnement
+{
+    @include responsive-small;
+}
+
+.restaurants
+{
+    @include responsive-small;
+}
+
+.footer-container{
+    @include responsive-small;
+}
+    // PAGES RESTAURANTS
+
+
+}
+

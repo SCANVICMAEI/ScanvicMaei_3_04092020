@@ -1,16 +1,43 @@
-@mixin flex {
-display: flex;
- justify-content: center;
- align-items:center;
-}
 
-@mixin size-pages {
+// MIXINS RESPONSIVE
+@mixin responsive-xsmall {
     width: 90%;
     margin: auto;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-items: center;
+}
+
+@mixin responsive-small {
+    width: 540px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
+@mixin responsive-medium {
+    width: 720px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+@mixin responsive-large {
+    width: 960px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+@mixin responsive-xlarge {
+    width: 1140px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 @mixin img-size {
@@ -46,7 +73,7 @@ display: flex;
     border-radius: 20px;
 }
 
-
+// MIXIN TYPO
 @mixin font-Roboto {
     font-family:'Roboto', sans-serif;
 }
@@ -65,3 +92,4 @@ display: flex;
     text-align: left;
     width: 20rem;
 }
+

@@ -1,18 +1,20 @@
 
+// Mobile first xsmall 
+
+
 @import "mixin";
 @import "variables";
+
+@import "small.scss";
+@import "medium.scss";
+@import "large.scss";
+@import "xlarge.scss";
 
 
 //PAGE ACCEUIL
 
 //commun
 
-h2{
-  font-weight: 900;;
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
-}
 
 h3{
   font-weight: 800;;
@@ -31,7 +33,7 @@ p
 //header
 
 header {
-  @include size-pages;
+  @include responsive-xsmall ;
 }
 
 .logo{
@@ -46,7 +48,7 @@ header {
 .localisation{
   
  @include flex;
- @include size-pages;
+ @include responsive-xsmall;
  @include font-Roboto;
  background-color:#F2F2F2;
 
@@ -60,8 +62,23 @@ header {
     input{
      background-color:#D9D9D9 ;
      margin-left: 1rem;
-    }
+    }   
   }
+}
+
+ .localisation h2{
+  width: 60%;
+  text-align: center;
+  font-weight: 900;;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+
+.localisation span{
+  width: 70%;
+  text-align: center;
 }
 
 
@@ -81,12 +98,16 @@ a{
 }
 
 .fonctionnement {
-  @include size-pages;
   @include font-Roboto;
 
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
   i{
     margin-right: 1rem;
-    margin-left: 1rem;
+    margin-left: 2.5rem;
     color:grey ;
     
     i:hover{
@@ -95,12 +116,17 @@ a{
   }
 }
 
-
+.fonctionnement h2{
+  font-weight: 900;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
 
 
 .fonctionnement-nav
 {
-  @include size-pages;
+  @include responsive-xsmall;
 
   li{
     @include button-fonctionnement;
@@ -123,7 +149,7 @@ a{
   }
 }
 
-.fonctionnement-nav li:hover {   //ATTENTION PROBLEME
+.fonctionnement-nav li:hover {  
   @include box-shadow-hover;
  background-color: rgba(147, 86, 220, 0.4);
  background-clip: padding-box;
@@ -133,18 +159,28 @@ a{
 //section restaurants
 
 .restaurants{
-  @include size-pages;
+  @include responsive-xsmall;
   @include font-Roboto;
-  background-color:#F2F2F2;
-
+  padding-bottom: 2rem;
+ 
  .restaurants-article:hover{
    @include box-shadow-hover
   }
-
- img { 
+  img{
     @include img-size;
-  } 
+  }
+  }
+
+.restaurants h2{
+  
+  font-weight: 900;;
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  justify-content: left;
+  width: 80%;
 }
+
 
 article{
  margin-bottom: 2rem;
@@ -158,10 +194,6 @@ article{
   flex-direction: column;
 }
 
-.restaurants-article .fa-heart:hover{ 
- color:linear-gradient(#9356DC,#FF79DA);
-}
-
 .restaurants-description
 {
   display: flex;
@@ -173,21 +205,36 @@ article{
   padding-top: 1.5rem;
   margin: 0;
   font-size: 1.2rem;
+  
   }
 
 }
 
-i.far.fa-heart:hover{   
-  background:linear-gradient($couleur-primaire $couleur-secondaire);
-  background-clip: text;
+.restaurants {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #F2F2F2;
+  border-top-left-radius: 4rem;
+  border-top-right-radius: 4rem;
+}
+.restaurants-description i:hover{   
+  background-image: linear-gradient($couleur-primaire, $couleur-secondaire);
+  -webkit-text-fill-color: transparent;
+  background-clip : text;
+  transition: background-color 1s;
+  font-weight: 900;
    }
 
 
 //footer
 
 .footer-container {      
-  display: flex;
-  flex-direction: column;
+  @include responsive-xsmall;
+  height: 10rem;
   background-color:black;
   color: white;
   @include font-Roboto;
@@ -199,43 +246,90 @@ i.far.fa-heart:hover{
 
 .footer-container h3{
   @include font-Shrikhand;
-  margin-left: 0;
+  margin-left: 1.5rem;
 }
 
+.footer-container a{
 
-.footer-container a :hover{
-  color:$couleur-primaire;
+  margin-left: 1.5rem;
+}
+.fo
+
+footer a  :hover{
+ background-image: linear-gradient($couleur-primaire, $couleur-secondaire);
+ -webkit-text-fill-color: transparent;
+ background-clip : text;
+
 }
 
+// PAGES RESTAURANTS
 
-// PAGE RESTAURANTS
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+header i {
+  margin-right: 4rem;
+}
 
 .photos-restaurant {
- object-fit: cover;
- height: 15rem;
- width: 15rem;
- margin: auto;
+  object-fit: cover;
+  height: 15rem;
+  width: 22rem;
+  margin: auto;
 }
 
-main{
- @include size-pages;
- background-color:#F2F2F2;
- border-top-left-radius: 8rem;
- border-top-right-radius: 8rem;
+.section-restaurants {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #F2F2F2;
+  border-top-left-radius: 4rem;
+  border-top-right-radius: 4rem;
 }
 
-section li{
-@include box-choix;
- i{
-   display: none;
-  }
+article section li {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 1rem;
+  text-align: left;
+  width: 20rem;
+}
+article section li i {
+  display: none;
 }
 
-.titres{
- @include font-Shrikhand;
- font-size: 1.5rem;
+.titres {
+  font-family: "Shrikhand", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  padding-top: 2rem;
+}
+.titres i {
+  margin-left: 2.5rem;
 }
 
-.photos-restaurant{
- display: flex;
+.photos-restaurant {
+  display: flex;
+}
+
+.far.fa-check-circle {
+  display: none;
+}
+
+.nav-plats h2{
+  border-bottom: 4px solid $couleur-tertiaire;
+}
+
+.nav-entrees h2{
+  border-bottom: 4px solid $couleur-tertiaire;
+}
+
+.nav-desserts h2{
+  border-bottom: 4px solid $couleur-tertiaire;
 }
