@@ -4,10 +4,23 @@
 
 @media (min-width: 1200px) {
 
-
-header
-{
+header{
+   
+    @include responsive-xlarge;
     background-color: yellow;
+}
+
+
+.restaurants{
+    @include responsive-xlarge;
+}
+
+.localisation{
+    @include responsive-xlarge;
+}
+
+.footer-container{
+    @include responsive-xlarge;
 }
 
 }

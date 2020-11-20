@@ -1,45 +1,50 @@
 
 // MIXINS RESPONSIVE
+
 @mixin responsive-xsmall {
-    width: 90%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+ width: 90%;
+ margin: auto;
+ display: flex;
+ flex-direction: column;
+ flex-wrap: wrap;
 }
 
 @mixin responsive-small {
-    width: 540px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+ width: 540px!important;
+ margin: auto;
+ padding: 0;
+ display: flex;
+ flex-direction: column;
+ flex-wrap: wrap;
 }
 
 
 @mixin responsive-medium {
-    width: 720px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+ width: 720px !important;
+ margin: auto;
+ display: flex;
+ flex-direction: column;
+ flex-wrap: wrap;
 }
+
 @mixin responsive-large {
-    width: 960px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+ width: 960px !important;
+ margin: 0;
+ display: flex;
+ flex-direction: column;
+ flex-wrap: wrap;
 }
 
 @mixin responsive-xlarge {
-    width: 1140px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+ width: 1140px !important ;
+ margin: auto;
+ display: flex;
+ flex-direction: column;
+ flex-wrap: wrap;
 }
 
+
+// MIXINS PHOTOS
 @mixin img-size {
  height: 8rem;
  width: 20rem;
@@ -47,6 +52,25 @@
  object-fit: cover;
 }
 
+// MIXIN TYPO
+@mixin font-Roboto {
+ font-family:'Roboto', sans-serif;
+}
+
+@mixin font-Shrikhand
+{
+ font-family: 'Shrikhand' , sans-serif;
+ font-weight: 400;
+}
+
+@mixin box-choix {
+ background-color: white;
+ border-radius: 1rem;
+ padding: 1rem;
+ margin: 1rem;
+ text-align: left;
+ width: 20rem;
+}
 
 @mixin button-localisation {
  background: linear-gradient(to bottom right,#FF79DA ,#9356DC);
@@ -54,42 +78,20 @@
  padding: 0.9rem;
  margin-bottom: 2rem;
 }
-
+   
 @mixin button-fonctionnement{
-
  background-color: #f2f2f2;
  border-radius: 30px;
  padding: 0.9rem;
- margin-bottom: 2rem;
+margin-bottom: 2rem;
 }
-
+   
 @mixin box-shadow {
-    box-shadow: 5px 10px 5px 0px #656565;
-    border-radius: 20px;
+ box-shadow: 5px 10px 5px 0px #656565;
+ border-radius: 20px;
 }
-
+   
 @mixin box-shadow-hover{
-    box-shadow: 5px 20px 5px 0px #656565; 
-    border-radius: 20px;
+ box-shadow: 5px 20px 5px 0px #656565; 
+ border-radius: 20px;
 }
-
-// MIXIN TYPO
-@mixin font-Roboto {
-    font-family:'Roboto', sans-serif;
-}
-
-@mixin font-Shrikhand
-{
-    font-family: 'Shrikhand' , sans-serif;
-    font-weight: 400;
-}
-
-@mixin box-choix {
-    background-color: white;
-    border-radius: 1rem;
-    padding: 1rem;
-    margin: 1rem;
-    text-align: left;
-    width: 20rem;
-}
-

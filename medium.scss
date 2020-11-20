@@ -7,9 +7,30 @@ header
     background-color:red;
 }
 
+header{
+   
+    @include responsive-medium ;
+}
+
+.restaurants{
+    @include responsive-medium;
+}
+
+.fonctionnement
+{
+    @include responsive-medium;
+}
+
+.localisation{
+    @include responsive-medium;
+}
+
+.footer-container{
+    @include responsive-medium;
+}
+
+
 // PAGES RESTAURANTS
-
-
 
 }
 

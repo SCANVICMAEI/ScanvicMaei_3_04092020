@@ -1,13 +1,32 @@
 //PAGE ACCEUIL
 // PAGES RESTAURANTS
 
-@media (min-width: 992px) and (max-width:1199.98px)
-{
+@media (min-width: 992px) and (max-width:1199.98px){
 
 
-header
-{
-    background-color:green;
+
+header{
+   
+    @include responsive-large ;
+    background-color: green;
 }
+
+.localisation{
+    @include responsive-large;
+}
+
+.restaurants{
+    @include responsive-large;
+}
+
+.fonctionnement{
+    @include responsive-large;
+}
+
+.footer-container{
+    @include responsive-large;
+}
+
+
 
 }

@@ -1,5 +1,5 @@
 
-
+// 540px
 @media (min-width: 576px) and (max-width:767.98px)
 {
 
@@ -7,29 +7,31 @@
 
 
    header{
-        background-color: blue;
+        background-color: blue;  
+        @include responsive-small ;
+    }
+
+   
+    section .fonctionnement{
+        @include responsive-small ;
+    }
+
+    .localisation{
         @include responsive-small;
     }
 
-.localisation{
-    @include responsive-small;
-}
+    .footer-container{
+        @include responsive-small;
+    }
 
-.fonctionnement
-{
-    @include responsive-small;
-}
 
-.restaurants
-{
-    @include responsive-small;
-}
 
-.footer-container{
-    @include responsive-small;
-}
     // PAGES RESTAURANTS
+    .pages-restaurants{
+        @include responsive-small;
+    }
 
 
 }
+
 

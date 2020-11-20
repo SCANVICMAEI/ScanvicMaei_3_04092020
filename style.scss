@@ -17,11 +17,11 @@
 
 
 h3{
-  font-weight: 800;;
-  font-size: large;
-  margin-top: 0.5rem;
-  margin-left: 1rem;
-  margin-bottom: 0.4rem;
+ font-weight: 800;;
+ font-size: large;
+ margin-top: 0.5rem;
+ margin-left: 1rem;
+ margin-bottom: 0.4rem;
 }
 
 p
@@ -29,11 +29,18 @@ p
   margin-left: 1rem;
 }
 
+a{
+  text-decoration: none;
+  color: black;
+}
 
-//header
+//header pages restaurants + page acc
 
 header {
   @include responsive-xsmall ;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; 
 }
 
 .logo{
@@ -46,9 +53,9 @@ header {
 //section localisation 
 
 .localisation{
-  
- @include flex;
+
  @include responsive-xsmall;
+ align-items: center;
  @include font-Roboto;
  background-color:#F2F2F2;
 
@@ -66,21 +73,19 @@ header {
   }
 }
 
- .localisation h2{
-  width: 60%;
-  text-align: center;
-  font-weight: 900;;
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
+.localisation h2{
+ width: 60%;
+ text-align: center;
+ font-weight: 900;;
+ font-size: 1.5rem;
+ margin-bottom: 1rem;
+ margin-top: 1rem;
 }
-
 
 .localisation span{
-  width: 70%;
-  text-align: center;
+ width: 70%;
+ text-align: center;
 }
-
 
 .button-pink
 {
@@ -89,45 +94,40 @@ header {
  margin-top:2rem;
  padding-right: 2rem;
  padding-left: 2rem;
+  &:hover{
+   @include box-shadow-hover;
+   background-clip: padding-box;
+   transition-duration: 0.3s;
+   opacity: 0.8;
+  }
 }
 
 //section fonctionnement
-a{
- text-decoration: none;
- color: black;
-}
 
-.fonctionnement {
+
+.fonctionnement{
   @include font-Roboto;
-
-    width: 80%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   i{
     margin-right: 1rem;
     margin-left: 2.5rem;
     color:grey ;
-    
-    i:hover{
-      color:$couleur-primaire;
-    }
+  }
+
+  h2{
+    font-weight: 900;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
   }
 }
 
-.fonctionnement h2{
-  font-weight: 900;
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
-}
-
-
-.fonctionnement-nav
-{
+.fonctionnement-nav{
   @include responsive-xsmall;
-
+  
   li{
     @include button-fonctionnement;
     @include box-shadow;
@@ -153,6 +153,7 @@ a{
   @include box-shadow-hover;
  background-color: rgba(147, 86, 220, 0.4);
  background-clip: padding-box;
+ transition-duration: 0.3s;
 }
 
 
@@ -162,73 +163,61 @@ a{
   @include responsive-xsmall;
   @include font-Roboto;
   padding-bottom: 2rem;
- 
+  align-items: center;
+  background-color: #F2F2F2;
+  border-top-left-radius: 4rem;
+  border-top-right-radius: 4rem;
+
+  h2{
+  
+   font-weight: 900;;
+   font-size: 1.5rem;
+   padding-bottom: 1rem;
+   padding-top: 1rem;
+   justify-content: left;
+   width: 80%;
+  }
  .restaurants-article:hover{
    @include box-shadow-hover
   }
   img{
     @include img-size;
   }
-  }
-
-.restaurants h2{
-  
-  font-weight: 900;;
-  font-size: 1.5rem;
-  padding-bottom: 1rem;
-  padding-top: 1rem;
-  justify-content: left;
-  width: 80%;
 }
 
-
-article{
+.restaurants article{
  margin-bottom: 2rem;
  @include box-shadow;
+}
+
+.restaurants-article{
  display: flex;
  flex-direction: column;
 }
 
-.restaurants-article{
-  display: flex;
-  flex-direction: column;
-}
-
 .restaurants-description
 {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  height: 4rem;
+ display: flex;
+ flex-direction: column;
+ flex-wrap: wrap;
+ height: 4rem;
+}
 
- i{
-  padding-top: 1.5rem;
-  margin: 0;
-  font-size: 1.2rem;
-  
+.restaurants-description i{
+ padding-top: 1.5rem;
+ padding-right: 2rem;
+ margin: 0;
+ font-size: 1.3rem;
+ text-align: right;
+
+  &:hover{   
+   background-image: linear-gradient($couleur-primaire, $couleur-secondaire);
+   background-clip : text;
+   -webkit-text-fill-color: transparent;
+   font-weight: 900;
+   transition-duration: 0.5s;  
   }
-
 }
-
-.restaurants {
-  width: 90%;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-  background-color: #F2F2F2;
-  border-top-left-radius: 4rem;
-  border-top-right-radius: 4rem;
-}
-.restaurants-description i:hover{   
-  background-image: linear-gradient($couleur-primaire, $couleur-secondaire);
-  -webkit-text-fill-color: transparent;
-  background-clip : text;
-  transition: background-color 1s;
-  font-weight: 900;
-   }
-
 
 //footer
 
@@ -241,6 +230,13 @@ article{
   a{
     color: white;
     margin-top:0.5rem ;
+    margin-left: 1.5rem;
+    &:hover{
+      background-image: linear-gradient($couleur-primaire, $couleur-secondaire);
+      -webkit-text-fill-color: transparent;
+      background-clip : text;
+      transition-duration: 0.5s;
+    }
   }
 }
 
@@ -249,47 +245,31 @@ article{
   margin-left: 1.5rem;
 }
 
-.footer-container a{
 
-  margin-left: 1.5rem;
-}
-.fo
-
-footer a  :hover{
- background-image: linear-gradient($couleur-primaire, $couleur-secondaire);
- -webkit-text-fill-color: transparent;
- background-clip : text;
-
-}
-
-// PAGES RESTAURANTS
-
-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-header i {
-  margin-right: 4rem;
-}
+// PAGES RESTAURANTS x4
 
 .photos-restaurant {
-  object-fit: cover;
-  height: 15rem;
-  width: 22rem;
-  margin: auto;
+ object-fit: cover;
+ height: 17rem;
+ width:90%;
+ margin: auto;
+ margin: auto;
+ position: absolute;
+ justify-content: center;
+ margin-left: 1.5rem;
 }
 
-.section-restaurants {
-  width: 90%;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-  background-color: #F2F2F2;
-  border-top-left-radius: 4rem;
-  border-top-right-radius: 4rem;
+.titres{
+ text-align: center;
+ margin-bottom: 2rem;
+ font-family: "Shrikhand", sans-serif;
+ font-weight: 400;
+ font-size: 1.5rem;
+ padding-top: 2rem;
+}
+
+.titres i {
+  margin-left: 2.5rem;
 }
 
 article section li {
@@ -300,36 +280,77 @@ article section li {
   text-align: left;
   width: 20rem;
 }
-article section li i {
+
+.nav-menue h2{
+  border-bottom: 4px solid $couleur-tertiaire;
+  width: 10%;
+  margin-left: 2rem;
+  @include font-Roboto
+}
+
+.nav-menue article{
+ width: 90%;
+ height: 4rem;
+ margin: auto;
+ margin-bottom: 2rem;
+ border-radius: 1rem;
+ background-color: white;
+}
+
+.nav-menue h3{
+ padding-top: 0.8rem;
+ @include font-Roboto
+}
+ 
+.page-restaurants{
+ background-color: #F2F2F2;
+ border-top-left-radius: 3rem;
+ border-top-right-radius: 3rem;
+ width: 90%;
+ margin: auto;
+ margin-top: 13rem;
+ padding-bottom: 5rem;
+ align-items: center;
+ position: relative;
+
+  span{
+   @include font-Roboto
+  }
+
+  p{
+   display: flex;
+   justify-content: space-between;
+  }   
+}
+
+.nav-menue-prix{
+ font-weight: bolder;
+ margin-right: 1rem;
+}
+
+.button-commande a{
+ @include button-localisation;
+ @include box-shadow;
+ padding-right: 4rem;
+ padding-left: 4rem;
+ @include font-Roboto;
+}
+
+.button-commande{
+ margin: auto;
+ width: 90%;
+ text-align: center;
+ margin-top: 3.5rem;
+
+  & a:hover{
+   @include box-shadow-hover;
+   background-clip: padding-box;
+   transition-duration: 0.3s;
+   opacity: 0.8;
+  }
+}
+ 
+.far.fa-check-circle { // a mettre en forme
   display: none;
 }
 
-.titres {
-  font-family: "Shrikhand", sans-serif;
-  font-weight: 400;
-  font-size: 1.5rem;
-  padding-top: 2rem;
-}
-.titres i {
-  margin-left: 2.5rem;
-}
-
-.photos-restaurant {
-  display: flex;
-}
-
-.far.fa-check-circle {
-  display: none;
-}
-
-.nav-plats h2{
-  border-bottom: 4px solid $couleur-tertiaire;
-}
-
-.nav-entrees h2{
-  border-bottom: 4px solid $couleur-tertiaire;
-}
-
-.nav-desserts h2{
-  border-bottom: 4px solid $couleur-tertiaire;
-}

@@ -1,7 +1,0 @@
-@media (min-width: 576px) and (max-width: 767.98px) {
-  header {
-    background-color: blue;
-    @inclresponsive-small;
-  }
-}
-/*# sourceMappingURL=small.css.map */
