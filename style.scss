@@ -2,13 +2,13 @@
 // Mobile first xsmall 
 
 
-@import "mixin";
-@import "variables";
+@import "_mixin";
+@import "_variables";
 
-@import "small.scss";
-@import "medium.scss";
-@import "large.scss";
-@import "xlarge.scss";
+@import "_small.scss";
+@import "_medium.scss";
+@import "_large.scss";
+@import "_xlarge.scss";
 
 
 //PAGE ACCEUIL
@@ -48,6 +48,7 @@ header {
  width:9rem;
  margin-bottom: 1rem;
  margin-top: 1rem;
+ margin-left: 2rem;
 }
 
 //section localisation 
@@ -56,6 +57,7 @@ header {
 
  @include responsive-xsmall;
  align-items: center;
+ width: 90%;
  @include font-Roboto;
  background-color:#F2F2F2;
 
@@ -108,6 +110,7 @@ header {
 .fonctionnement{
   @include font-Roboto;
   margin: auto;
+  width: 90%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -188,6 +191,7 @@ header {
 .restaurants article{
  margin-bottom: 2rem;
  @include box-shadow;
+ width: 90%;
 }
 
 .restaurants-article{
@@ -204,9 +208,10 @@ header {
 }
 
 .restaurants-description i{
- padding-top: 1.5rem;
- padding-right: 2rem;
- margin: 0;
+ padding-top: 1rem;
+ padding-right: 0;
+ margin-right: 1.5rem;
+ margin-top: 0.5rem;
  font-size: 1.3rem;
  text-align: right;
 
@@ -245,19 +250,24 @@ header {
   margin-left: 1.5rem;
 }
 
+.fas.fa-utensils{
+  margin-right: 1rem;
+}
+
+.fas.fa-hands-helping{
+  margin-right: 0.5rem;
+}
+
 
 // PAGES RESTAURANTS x4
-
 .photos-restaurant {
- object-fit: cover;
- height: 17rem;
- width:90%;
- margin: auto;
- margin: auto;
- position: absolute;
- justify-content: center;
- margin-left: 1.5rem;
-}
+  text-align: center;
+  object-fit: cover;
+  height: 17rem;
+  width:90%;
+  position: absolute;
+  }
+ 
 
 .titres{
  text-align: center;
@@ -350,7 +360,17 @@ article section li {
   }
 }
  
+
+
+
+
+
+
+//teste animation 
 .far.fa-check-circle { // a mettre en forme
   display: none;
 }
+
+
+
 

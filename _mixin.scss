@@ -29,14 +29,13 @@
 
 @mixin responsive-large {
  width: 960px !important;
- margin: 0;
+ margin: auto;
  display: flex;
- flex-direction: column;
  flex-wrap: wrap;
 }
 
 @mixin responsive-xlarge {
- width: 1140px !important ;
+ width: 1140px!important;
  margin: auto;
  display: flex;
  flex-direction: column;
@@ -47,7 +46,7 @@
 // MIXINS PHOTOS
 @mixin img-size {
  height: 8rem;
- width: 20rem;
+ width: 100%;
  border-radius: 15px 15px 0px 0px ;
  object-fit: cover;
 }

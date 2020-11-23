@@ -1,0 +1,105 @@
+
+// 960px
+
+@media (min-width: 992px) and (max-width:1199.98px){
+
+ //PAGE ACCEUIL
+
+    header{
+        @include responsive-large;
+    }
+
+   
+    .fonctionnement
+    {
+        @include responsive-large;
+
+        .fonctionnement-titre{
+            margin-bottom: 2rem;
+            margin-left: 3.5rem ;
+        }
+    }
+
+    .fonctionnement-nav ol{
+        display: flex;
+        flex-direction: row;  
+       }
+     
+       .fonctionnement li{
+          margin-right: 1rem;
+           margin-left: 1rem;
+           width: 15rem;
+       }
+    
+     .localisation{
+        @include responsive-large;
+    }
+
+    .restaurants{
+        @include responsive-large;
+        flex-direction: row !important;
+        justify-content: space-around;
+         
+        .restaurants-titre{
+            width: 100%;
+            margin-bottom: 2rem;
+            margin-left: 3.5rem ;
+        }
+    }
+    
+
+    .restaurants article{
+        width: 40% !important;
+       
+    }
+    
+    .footer-container{
+        @include responsive-large;
+    }
+
+
+
+
+
+
+
+
+
+ // PAGES RESTAURANTS
+
+ .page-restaurants{
+      @include responsive-large;
+    }
+ 
+ .nav-menue article{
+     width: 30rem !important;
+    }
+
+ .nav-menue section{
+     align-items: center;   
+    }
+  
+ .nav-menue h2{
+     width: 100% !important;
+     border-bottom: 100%;
+     border-style: dotted !important;
+     margin: auto !important;
+     margin-bottom: 2rem !important;
+     padding-bottom: 1rem;
+     text-align: center;
+    }
+  
+ .nav-menue{
+     width: 100%;
+    }
+
+ .titres{
+     text-align: center;
+     width: 100%;
+    }
+
+ img.photos-restaurant{
+     width: 960px ;
+    }
+
+}

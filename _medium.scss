@@ -1,0 +1,58 @@
+// 720px
+
+//PAGE ACCEUIL
+
+@media  (min-width: 768px) and (max-width:991.98px){
+
+  header{
+     background-color:red;
+     @include responsive-medium ;
+    }
+
+  .fonctionnement{
+     @include responsive-medium;
+    
+       .fonctionnement-titre{
+         margin-bottom: 2rem;
+         margin-left: 3.5rem ;
+        }
+    }
+
+   .fonctionnement-nav ol{
+     display: flex;
+     flex-direction: row;  
+    }
+ 
+   .fonctionnement li{
+     margin-right: 1rem;
+     margin-left: 1rem;
+     width: 10rem;
+    }
+
+   .localisation{
+     @include responsive-medium;
+    }
+
+   .footer-container{
+     @include responsive-medium
+    }
+
+   .restaurants{
+     @include responsive-medium
+    }
+
+// PAGES RESTAURANTS
+
+   .page-restaurants{
+     @include responsive-medium;
+    }
+
+   .nav-menue{
+     width: 100%;
+    }
+
+   img.photos-restaurant{
+     width: 720px ;
+    }
+}
+
