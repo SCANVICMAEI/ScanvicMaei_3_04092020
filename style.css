@@ -93,7 +93,6 @@
 
 @media (min-width: 768px) and (max-width: 991.98px) {
   header {
-    background-color: red;
     width: 720px !important;
     margin: auto;
     display: -webkit-box;
@@ -817,6 +816,10 @@ header {
   height: 17rem;
   width: 90%;
   position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .titres {
