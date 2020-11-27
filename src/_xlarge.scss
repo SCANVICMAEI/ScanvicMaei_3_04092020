@@ -6,13 +6,16 @@
  //PAGE ACCEUIL
 
  header{
-     @include responsive-xlarge;
+     
+     background-color: yellow;
     }
-
+.container{
+  @include responsive-xlarge;
+}
 
 
     .fonctionnement{
-     @include responsive-xlarge;
+     
      .fonctionnement-titre{
          margin-bottom: 2rem;
          margin-left: 3.5rem ;
@@ -30,18 +33,12 @@
      width: 15rem;
     }
 
-    .localisation{
-     @include responsive-xlarge;
-    }
-
-   .footer-container{
-     @include responsive-xlarge;
-    }
 
    .restaurants{
-     @include responsive-xlarge;
+ 
      flex-direction: row !important;
      justify-content: space-around;
+     border-radius: 0% !important;
         .restaurants-titre{
          width: 100%;
          margin-bottom: 2rem;
@@ -53,14 +50,12 @@
      width: 40% !important;  
     }
 
-   .footer-container{
-     @include responsive-xlarge;
-    }
+   
 
 // PAGES RESTAURANTS
 
   .page-restaurants{
-     @include responsive-xlarge;
+
      justify-content: center;
     }
 

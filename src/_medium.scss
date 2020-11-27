@@ -4,13 +4,16 @@
 
 @media  (min-width: 768px) and (max-width:991.98px){
 
+
+  .container{
+    @include responsive-medium ;
+  }
   header{
-   @include responsive-medium ;
+   background-color: red;
   }
 
   .fonctionnement{
-    @include responsive-medium;
-    
+  
     .fonctionnement-titre{
      margin-bottom: 2rem;
      margin-left: 3.5rem ;
@@ -28,23 +31,12 @@
    width: 10rem;
   }
 
-  .localisation{
-   @include responsive-medium;
-  }
-
-  .footer-container{
-   @include responsive-medium
-  }
 
   .restaurants{
-   @include responsive-medium
+   border-radius: 0% !important;
   }
 
   // PAGES RESTAURANTS
-
-  .page-restaurants{
-   @include responsive-medium;
-  }
 
   .nav-menue{
    width: 100%;

@@ -2,6 +2,7 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css"/>
 
@@ -11,11 +12,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
 
   <title>Oh My Food</title>
+
   <meta name="description" content="">
 </head>  
 
 <body>
-    <header> <!--logo-->
+    <header class="container"> <!--logo-->
 
      <img class="logo" src="IMG/ohmyfood.png" alt="logo- ohmyfood">
 
@@ -23,12 +25,12 @@
 
   <section> <!--bloc recherche localisation-->
 
-    <div class="localisation">
+    <div class="localisation container">
 
       <nav class="localisation-recherche-ville" >
        <form method="post" action="traitement.php">
           <i class="fas fa-map-marker-alt"></i>
-           <input type="text" name="ville" placeholder="Paris,Bellevilles" style="border: hidden; border: 0" maxlength="10"/>
+           <input type="text" name="ville" placeholder="Paris,Belleville" style="border: hidden; border: 0" maxlength="10"/>
         </form>
       </nav>
 
@@ -41,11 +43,11 @@
 
   </section>
 
-  <section class="fonctionnement" > 
+  <section class="fonctionnement container"> 
 
     <h2 class="fonctionnement-titre"> Fonctionnement</h2>
 
-    <div class="fonctionnement-nav">
+    <div class="fonctionnement-nav container">
       <ol>
        <li><a href="#"><i class="fas fa-mobile-alt"></i> Choisissez un restaurant </a></li>
        <li><a href="#"><i class="fas fa-list-ul"></i> Composez votre menu </a></li>
@@ -59,13 +61,13 @@
 
     <section><!--bloc restaurants-->
 
-      <div class="restaurants">
+      <div class="restaurants container">
 
         <h2 class="restaurants-titre">Restaurants</h2>
 
         <article>
           <a href="La-palette-du-gout.html" class="restaurants-article">
-           <img src="IMG/la-palette-du-gout.jpg" alt="Photos Restaurant"> 
+           <img src="images/la-palette-du-gout.jpg" alt="Photos Restaurant"> 
             <div class="restaurants-description">
              <h3>La palette du goût</h3>
              <p>Ménilmontant</p>
@@ -76,7 +78,7 @@
 
         <article>
           <a href="La-note-enchantée.html" class="restaurants-article"> 
-            <img src="IMG/la-note-enchantée.jpg" alt="Photos Restaurant"> 
+            <img src="images/la-note-enchantée.jpg" alt="Photos Restaurant"> 
             <div class="restaurants-description">
              <h3>La note enchantée</h3>
              <p> Charonne</p>
@@ -87,7 +89,7 @@
 
         <article>
           <a href="A-la-francaise.html"class="restaurants-article">
-            <img src="IMG/a-la-française.jpg" alt="Photos Restaurant">
+            <img src="images/a-la-française.jpg" alt="Photos Restaurant">
             <div class="restaurants-description">
              <h3>A la française</h3>
              <p> Cité Rouge</p>
@@ -98,7 +100,7 @@
 
         <article>
           <a href="Le-délice-des-sens.html"class="restaurants-article">
-            <img src="IMG/le-délice-des-sens.jpg" alt="Photos Restaurant">
+            <img src="images/le-délice-des-sens.jpg" alt="Photos Restaurant">
             <div class="restaurants-description">
              <h3>Le délice des sens</h3> 
              <p>Folie-Méricourt</p>
@@ -114,8 +116,8 @@
   </main>
 
   <footer >
-    <div  class="footer-container">
-      <h3> ohmyfood</h3>
+    <div  class="footer-container container">
+      <span> ohmyfood</span>
 
      <a href="#" class="footer-lien-avec-logo"><i class="fas fa-utensils"></i>Proposer un restaurant</a>
      <a href="#"class="footer-lien-avec-logo"><i class="fas fa-hands-helping"></i>Devenir partenaire</a>

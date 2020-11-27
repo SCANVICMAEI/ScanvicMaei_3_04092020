@@ -5,14 +5,19 @@
 
  //PAGE ACCEUIL
 
+
+ .container{
+    @include responsive-large;
+ }
     header{
-        @include responsive-large;
+       
+        background-color: green;
     }
 
    
     .fonctionnement
     {
-        @include responsive-large;
+      
 
         .fonctionnement-titre{
             margin-bottom: 2rem;
@@ -31,14 +36,13 @@
            width: 15rem;
        }
     
-     .localisation{
-        @include responsive-large;
-    }
+    
 
     .restaurants{
-        @include responsive-large;
+        
         flex-direction: row !important;
         justify-content: space-around;
+        border-radius: 0% !important;
          
         .restaurants-titre{
             width: 100%;
@@ -53,9 +57,7 @@
        
     }
     
-    .footer-container{
-        @include responsive-large;
-    }
+   
 
 
 
@@ -67,18 +69,12 @@
 
  // PAGES RESTAURANTS
 
- .page-restaurants{
-      @include responsive-large;
-    }
+ 
  
  .nav-menue article{
      width: 30rem !important;
     }
 
- .nav-menue section{
-     align-items: center;   
-    }
-  
  .nav-menue h2{
      width: 100% !important;
      border-bottom: 100%;
@@ -89,7 +85,7 @@
      text-align: center;
     }
   
- .nav-menue{
+ .nav-menue section{
      width: 100%;
     }
 

@@ -34,13 +34,16 @@ a{
   color: black;
 }
 
+.container{
+  @include responsive-xsmall ;
+}
 //header pages restaurants + page acc
 
 header {
-  @include responsive-xsmall ;
-  flex-direction: row;
+  flex-direction: row !important;
   justify-content: center;
   align-items: center; 
+ 
 }
 
 .logo{
@@ -54,10 +57,7 @@ header {
 //section localisation 
 
 .localisation{
-
- @include responsive-xsmall;
  align-items: center;
- width: 90%;
  @include font-Roboto;
  background-color:#F2F2F2;
 
@@ -109,9 +109,6 @@ header {
 
 .fonctionnement{
   @include font-Roboto;
-  margin: auto;
-  width: 90%;
-  display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   i{
@@ -129,7 +126,7 @@ header {
 }
 
 .fonctionnement-nav{
-  @include responsive-xsmall;
+  
   
   li{
     @include button-fonctionnement;
@@ -157,13 +154,17 @@ header {
  background-color: rgba(147, 86, 220, 0.4);
  background-clip: padding-box;
  transition-duration: 0.3s;
+ i{
+   color:$couleur-primaire;
+ }
+
 }
 
 
 //section restaurants
 
 .restaurants{
-  @include responsive-xsmall;
+ 
   @include font-Roboto;
   padding-bottom: 2rem;
   align-items: center;
@@ -192,6 +193,8 @@ header {
  margin-bottom: 2rem;
  @include box-shadow;
  width: 90%;
+ margin-bottom: 5rem;
+
 }
 
 .restaurants-article{
@@ -219,6 +222,7 @@ header {
    background-image: linear-gradient($couleur-primaire, $couleur-secondaire);
    background-clip : text;
    -webkit-text-fill-color: transparent;
+   -webkit-background-clip:text;
    font-weight: 900;
    transition-duration: 0.5s;  
   }
@@ -226,28 +230,37 @@ header {
 
 //footer
 
-.footer-container {      
-  @include responsive-xsmall;
+.footer-container  {      
+ 
   height: 10rem;
   background-color:black;
   color: white;
-  @include font-Roboto;
+  display: flex;
+  flex-direction: column;
+  
   a{
     color: white;
     margin-top:0.5rem ;
     margin-left: 1.5rem;
+    @include font-Roboto ;
     &:hover{
       background-image: linear-gradient($couleur-primaire, $couleur-secondaire);
       -webkit-text-fill-color: transparent;
+      -webkit-background-clip:text;
       background-clip : text;
       transition-duration: 0.5s;
     }
   }
 }
 
-.footer-container h3{
-  @include font-Shrikhand;
+.footer-container span {
   margin-left: 1.5rem;
+  font-weight: 800;
+  font-size: large;
+  margin-top: 0.5rem;
+  margin-left: 1.2rem;
+  margin-bottom: 0.4rem;
+  @include font-Shrikhand;
 }
 
 .fas.fa-utensils{
@@ -260,6 +273,7 @@ header {
 
 
 // PAGES RESTAURANTS x4
+
 .photos-restaurant {
   text-align: center;
   object-fit: cover;
@@ -270,6 +284,7 @@ header {
   right: 0;
   margin-left: auto;
   margin-right: auto;
+
   }
  
 
@@ -284,62 +299,70 @@ header {
 
 .titres i {
   margin-left: 2.5rem;
+  &:hover{   
+    background-image: linear-gradient($couleur-primaire, $couleur-secondaire);
+    background-clip : text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+    transition-duration: 0.5s;  
+    }
 }
 
-article section li {
-  background-color: white;
-  border-radius: 1rem;
-  padding: 1rem;
-  margin: 1rem;
-  text-align: left;
-  width: 20rem;
-}
 
 .nav-menue h2{
   border-bottom: 4px solid $couleur-tertiaire;
   width: 10%;
-  margin-left: 2rem;
+  padding-bottom: 0.4rem;
+  margin-bottom: 1rem;
   @include font-Roboto
 }
 
-.nav-menue article{
- width: 90%;
- height: 4rem;
- margin: auto;
- margin-bottom: 2rem;
- border-radius: 1rem;
- background-color: white;
-}
-
-.nav-menue h3{
- padding-top: 0.8rem;
- @include font-Roboto
-}
- 
 .page-restaurants{
  background-color: #F2F2F2;
  border-top-left-radius: 3rem;
  border-top-right-radius: 3rem;
- width: 90%;
- margin: auto;
  margin-top: 13rem;
  padding-bottom: 5rem;
  align-items: center;
  position: relative;
-
-  span{
-   @include font-Roboto
-  }
-
-  p{
-   display: flex;
-   justify-content: space-between;
-  }   
 }
+
+.nav-menue{
+  width: 90%;
+}
+
+article a{
+ 
+  height: 4.5rem;
+  margin:auto;
+  width: 100%;
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+  background-color: white;
+  justify-content: space-between;
+  display: flex; 
+  @include font-Roboto
+ }
+
+ 
 
 .nav-menue-prix{
  font-weight: bolder;
- margin-right: 1rem;
+ margin-bottom: 1rem;
+ align-items: flex-end;
+ display: flex;
+}
+
+.nav-menue div{
+ text-align: left;
+ padding-top: 0.5rem;
+ flex-wrap: nowrap;
+}
+
+.nav-menue-description p{
+ margin-left: 1rem;
+ text-overflow: ellipsis;
+ overflow: hidden;
 }
 
 .button-commande a{
@@ -365,16 +388,103 @@ article section li {
 }
  
 
-
-
-
-
-
 //teste animation 
-.far.fa-check-circle { // a mettre en forme
-  display: none;
+
+//fondu menu
+.fondu1{
+  animation: fondu 1s;
+}
+
+.fondu2{
+  animation: fondu 1.3s;
+}
+.fondu3{
+  animation: fondu 1.6s;
+}
+.fondu4{
+  animation: fondu 1.9s;
+}
+
+.fondu5{
+  animation: fondu 2.2s;
+}
+.fondu6{
+  animation: fondu 2.5s;
+}
+.fondu7{
+  animation: fondu 2.8s;
+}
+.fondu8{
+  animation: fondu 2.1s;
+}
+.fondu9{
+  animation: fondu 2.4s;
+}
+
+@keyframes fondu{
+from{
+opacity: 0;
+}
+to{
+opacity: 1;
+}
 }
 
 
 
 
+// apparition bouton
+ 
+
+  i.fas.fa-check-circle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-top-right-radius:1rem ;
+  border-bottom-right-radius: 1rem ;
+  size: 2rem;
+  color: white;
+  font-size: 1.5rem;
+ }
+
+  .nav-menu-rotate{
+   background-color: $couleur-tertiaire;
+   border-top-right-radius:1rem ;
+   border-bottom-right-radius: 1rem ;
+   height:100%;
+   width: 0;
+   margin: 0;
+   display: flex;
+   justify-content: center;
+   transition: 0.8s ease-out ;
+   overflow: hidden;
+  }
+
+.nav-menue article:hover .nav-menu-rotate{
+  width: 4rem;
+}
+.nav-menue article:hover i.fas.fa-check-circle{
+  animation: rotate 0.9s;
+}
+
+@keyframes rotate{
+  from{
+   transform:rotate(190deg);   
+  }
+  to{
+    transform: rotate(380deg); 
+  }
+  }
+  
+
+
+
+
+
+
+
+
+
+
+  

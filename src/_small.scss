@@ -1,0 +1,30 @@
+
+// 540px
+@media (min-width: 576px) and (max-width:767.98px)
+{
+    //PAGE ACCEUIL
+
+    header{
+      background-color: pink;
+    }
+   .container{  
+     @include responsive-small   
+    }
+   
+    .restaurants{  
+     background-color: blueviolet;
+    }
+
+   // PAGES RESTAURANTS
+
+   .nav-menue{
+     width: 100%;
+    }
+
+   .photos-restaurant{
+     width: 540px !important;
+    }
+
+}
+
+
