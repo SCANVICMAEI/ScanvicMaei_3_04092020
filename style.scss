@@ -2,13 +2,13 @@
 // Mobile first xsmall 
 
 
-@import "_mixin";
-@import "_variables";
+@import "src/_mixin";
+@import "src/_variables";
 
-@import "_small.scss";
-@import "_medium.scss";
-@import "_large.scss";
-@import "_xlarge.scss";
+@import "src/small.scss";
+@import "src/_medium.scss";
+@import "src/_large.scss";
+@import "src/_xlarge.scss";
 
 
 //PAGE ACCEUIL
