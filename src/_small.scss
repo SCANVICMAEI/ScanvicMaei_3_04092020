@@ -4,9 +4,7 @@
 {
     //PAGE ACCEUIL
 
-    header{
-      background-color: pink;
-    }
+    
    .container{  
      @include responsive-small   
     }
@@ -21,7 +19,7 @@
      width: 100%;
     }
 
-   .photos-restaurant{
+   img.photos-restaurant{
      width: 540px !important;
     }
 

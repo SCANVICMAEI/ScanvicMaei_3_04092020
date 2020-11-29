@@ -8,7 +8,7 @@ Pour chaque projet un scenario et un cahier des charges m'ait donner</p>
 
 **PRESENTATION DU PROJET**
 
-Recruté chez Ohmyfood je suis en charge de construire le site mobile avec une page d'acceuil et une page par restaurant (x4) . 
+<p>Recrutée chez Ohmyfood je suis en charge de construire le site mobile avec une page d'acceuil et une page par restaurant (x4) </p> 
 
 **CACHIER DES CHARGES**
 
@@ -25,11 +25,12 @@ Recruté chez Ohmyfood je suis en charge de construire le site mobile avec une p
 * bouton "j'aime" doit ce remplir au clic 
 * Création d'un loading spinner qui devra apparaître pendant 1 à 3 secondes avant la page d'acceuil.
 
-![](images/Accueil.png). ![](images/Menu.png).
+![](images/Accueil.png). 
+![](images/Menu.png).
 
 
 **ACTIONS CHOISIES**
 
 **CCL ET REMERCIEMENT**
-Un second projet ou j'ai pu appliquer quelques régle de sass (mixins...) . Un premier projet avec plusieurs pages .  
-je remercie mon mentor de formation pour son professionalisme et son partage de connaissances ainsi qu'aux autres etudiants avec qui j'ai partagé mon avancement.  
+<p>Un second projet ou j'ai pu appliquer quelques régle de sass (mixins...) . Un premier projet avec plusieurs pages .  
+je remercie mon mentor de formation pour son professionalisme et son partage de connaissances ainsi qu'aux autres etudiants avec qui j'ai partagé mon avancement.  </p>

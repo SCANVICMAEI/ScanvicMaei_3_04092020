@@ -5,11 +5,13 @@
 @import "src/_mixin";
 @import "src/_variables";
 
-@import "src/small.scss";
+@import "src/_small.scss";
 @import "src/_medium.scss";
 @import "src/_large.scss";
 @import "src/_xlarge.scss";
 
+
+//loader
 
 //PAGE ACCEUIL
 
@@ -18,7 +20,7 @@
 
 h3{
  font-weight: 800;;
- font-size: large;
+ font-size: 1rem;
  margin-top: 0.5rem;
  margin-left: 1rem;
  margin-bottom: 0.4rem;
@@ -169,8 +171,8 @@ header {
   padding-bottom: 2rem;
   align-items: center;
   background-color: #F2F2F2;
-  border-top-left-radius: 4rem;
-  border-top-right-radius: 4rem;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
 
   h2{
   
@@ -181,8 +183,8 @@ header {
    justify-content: left;
    width: 80%;
   }
- .restaurants-article:hover{
-   @include box-shadow-hover
+ .restaurants article{
+   @include box-shadow;
   }
   img{
     @include img-size;
@@ -193,8 +195,11 @@ header {
  margin-bottom: 2rem;
  @include box-shadow;
  width: 90%;
- margin-bottom: 5rem;
-
+ height: 12rem;
+ margin-bottom: 2rem;
+ &:hover{
+   @include box-shadow-hover;
+ }
 }
 
 .restaurants-article{
@@ -226,6 +231,20 @@ header {
    font-weight: 900;
    transition-duration: 0.5s;  
   }
+}
+
+.restaurant-image{
+  position: relative;
+  text-align: center;  
+}
+
+.restaurant-image-texte{
+  position: absolute;
+  top: 20%;
+  left: 75%;
+  background-color:#51c2a8;
+  color:#288a72 ;
+  padding: 5px;
 }
 
 //footer
@@ -275,18 +294,19 @@ header {
 // PAGES RESTAURANTS x4
 
 .photos-restaurant {
-  text-align: center;
+  
   object-fit: cover;
   height: 17rem;
-  width:90%;
   position: absolute;
   left: 0;
   right: 0;
   margin-left: auto;
-  margin-right: auto;
+  margin-right:auto;
+  } 
 
-  }
- 
+  img .photos-restaurant{
+    width: 90% !important;
+   }
 
 .titres{
  text-align: center;
@@ -314,7 +334,8 @@ header {
   width: 10%;
   padding-bottom: 0.4rem;
   margin-bottom: 1rem;
-  @include font-Roboto
+  @include font-Roboto;
+  font-size: 1rem;
 }
 
 .page-restaurants{
@@ -334,35 +355,37 @@ header {
 article a{
  
   height: 4.5rem;
-  margin:auto;
-  width: 100%;
   margin-bottom: 2rem;
   border-radius: 1rem;
   background-color: white;
   justify-content: space-between;
   display: flex; 
-  @include font-Roboto
+  @include font-Roboto;
+ 
  }
 
- 
 
 .nav-menue-prix{
  font-weight: bolder;
- margin-bottom: 1rem;
+ margin-bottom: 0.7rem;
  align-items: flex-end;
  display: flex;
+ margin-right: 2rem;
 }
 
 .nav-menue div{
- text-align: left;
  padding-top: 0.5rem;
- flex-wrap: nowrap;
+ white-space: nowrap;
+ overflow: hidden;
+ text-overflow: ellipsis;
 }
 
-.nav-menue-description p{
+.nav-menue-description {
  margin-left: 1rem;
- text-overflow: ellipsis;
+ margin-top: 0;
+ padding-bottom: 1rem;
  overflow: hidden;
+ text-overflow: ellipsis;
 }
 
 .button-commande a{
@@ -398,9 +421,11 @@ article a{
 .fondu2{
   animation: fondu 1.3s;
 }
+
 .fondu3{
   animation: fondu 1.6s;
 }
+
 .fondu4{
   animation: fondu 1.9s;
 }
@@ -408,18 +433,27 @@ article a{
 .fondu5{
   animation: fondu 2.2s;
 }
+
 .fondu6{
   animation: fondu 2.5s;
 }
+
 .fondu7{
   animation: fondu 2.8s;
 }
+
 .fondu8{
   animation: fondu 2.1s;
 }
+
 .fondu9{
   animation: fondu 2.4s;
 }
+
+.fondu10{
+  animation: fondu 2.7s;
+}
+
 
 @keyframes fondu{
 from{
@@ -453,32 +487,175 @@ opacity: 1;
    border-top-right-radius:1rem ;
    border-bottom-right-radius: 1rem ;
    height:100%;
-   width: 0;
-   margin: 0;
-   display: flex;
+   display: none;
    justify-content: center;
-   transition: 0.8s ease-out ;
+   transition: 1s linear ;
    overflow: hidden;
+  
+   
   }
 
 .nav-menue article:hover .nav-menu-rotate{
+  display: flex;
   width: 4rem;
 }
 .nav-menue article:hover i.fas.fa-check-circle{
-  animation: rotate 0.9s;
+  animation: rotate 0.4s;
 }
 
 @keyframes rotate{
   from{
-   transform:rotate(190deg);   
+   transform:rotate(90deg);   
   }
   to{
-    transform: rotate(380deg); 
+    transform: rotate(360deg); 
   }
   }
   
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// loader
+
+
+.loader_container{
+background-color:#f2f2f2;
+overflow: hidden;
+animation-name: loader;
+animation-duration: 3s;
+width: 100vw;
+height: 0vh;
+display: block;
+justify-content: center;
+align-items: center;
+}
+
+
+@keyframes loader{
+  0%{
+    height: 100vh;
+}
+    99%{
+    height: 100vh;
+    }
+  
+  100%{
+    height: 0vh;
+  }
+}
+
+.loading-large{
+  border-top: 5px solid #9356DC !important;
+  border-bottom: 5px solid #FF79DA !important;
+  border: 5px solid #f2f2f2 ;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin:auto;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  animation: large 3s;
+  }
+  
+  .loading-medium{
+      border-top: 5px solid #9356DC !important;
+      border-bottom: 5px solid #99E2D0 !important;
+      border: 5px solid #f2f2f2;
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;    
+     margin:auto;
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0;  
+      animation: medium 3s;
+      }
+      
+      .loading-small{
+          border-top: 5px solid #99E2D0 !important;
+          border-bottom: 5px solid #FF79DA !important;
+          border: 5px solid #f2f2f2;
+          width: 200px;
+          height: 200px;
+          border-radius: 50%;
+          margin:auto;
+          position: absolute;
+          left: 0;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          animation: small 3s;
+          }
+          
+  
+          .loader_container img{
+          margin:auto;
+          position: absolute;
+          left: 0;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          width: 7rem;
+          height: 2rem;
+          
+  }
+  
+  
+  /*animation*/
+  @keyframes small {
+      0%{
+          transform:rotate(0deg);
+         
+      }
+      100%{
+          transform: rotate(360deg);
+        
+      }
+  }
+  
+  @keyframes medium {
+      0%{
+          transform:rotate(0deg);
+          
+      }
+      100%{
+          transform: rotate(180deg);
+        
+        
+      }
+  }
+  
+  @keyframes large {
+      0%{
+          transform:rotate(90deg);
+    
+      }
+      100%{
+          transform: rotate(0deg);
+        
+      }
+      
+  }
 
 
 

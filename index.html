@@ -17,11 +17,21 @@
 </head>  
 
 <body>
-    <header class="container"> <!--logo-->
 
-     <img class="logo" src="IMG/ohmyfood.png" alt="logo- ohmyfood">
+  <div class="loader_container">
+    
+     <p class="loading-small"></p>
+     <p class="loading-medium"></p>
+     <p class="loading-large"></p>
+     <img src="images/ohmyfood.png" alt="logo">
+  
+  </div>
 
-    </header>
+  <header class="container"> <!--logo-->
+
+   <img class="logo" src="images/ohmyfood.png" alt="logo- ohmyfood">
+
+  </header>
 
   <section> <!--bloc recherche localisation-->
 
@@ -66,19 +76,25 @@
         <h2 class="restaurants-titre">Restaurants</h2>
 
         <article>
-          <a href="pages_html/La-palette-du-gout.html" class="restaurants-article">
-           <img src="images/la-palette-du-gout.jpg" alt="Photos Restaurant"> 
+          <a href="/pages_html/La-palette-du-gout.html" class="restaurants-article">
+            <div class="restaurant-image">
+              <img src="images/la-palette-du-gout.jpg" alt="Photos Restaurant"> 
+              <p class="restaurant-image-texte">Nouveau</p>
+            </div>
             <div class="restaurants-description">
              <h3>La palette du goût</h3>
              <p>Ménilmontant</p>
              <i class="far fa-heart"></i>
             </div>
-          </a>
+          </a>         
         </article>
 
         <article>
-          <a href="pages_html/La-note-enchantée.html" class="restaurants-article"> 
-            <img src="images/la-note-enchantée.jpg" alt="Photos Restaurant"> 
+          <a href="/pages_html/La-note-enchantée.html" class="restaurants-article"> 
+            <div class="restaurant-image">
+              <img src="images/la-note-enchantée.jpg" alt="Photos Restaurant">
+              <p class="restaurant-image-texte">Nouveau</p>
+            </div>
             <div class="restaurants-description">
              <h3>La note enchantée</h3>
              <p> Charonne</p>
@@ -99,7 +115,7 @@
         </article>
 
         <article>
-          <a href="pages_html/Le-délice-des-sens.html"class="restaurants-article">
+          <a href="/pages_html/Le-délice-des-sens.html"class="restaurants-article">
             <img src="images/le-délice-des-sens.jpg" alt="Photos Restaurant">
             <div class="restaurants-description">
              <h3>Le délice des sens</h3> 

@@ -5,10 +5,7 @@
 
  //PAGE ACCEUIL
 
- header{
-     
-     background-color: yellow;
-    }
+
 .container{
   @include responsive-xlarge;
 }
@@ -25,6 +22,7 @@
    .fonctionnement-nav ol{
      display: flex;
      flex-direction: row;  
+     justify-content: center;
     }
  
    .fonctionnement li{
@@ -64,30 +62,30 @@
     }
 
    .nav-menue section{
-     align-items: center; 
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
     }
   
    .nav-menue h2{
      width: 100% !important;
-     border-bottom: 100%;
      border-style: dotted !important;
+     border-top: none !important;
+     border-right: none !important;
+     border-left: none !important;
      margin: auto !important;
      margin-bottom: 2rem !important;
-     padding-bottom: 1rem;
+     padding-bottom: 1rem !important ;
      text-align: center;
     }
   
-   .nav-menue{
-     width: 100%;
-    }
-
    .titres{
      text-align: center;
      width: 100%;
     }
 
     img.photos-restaurant{
-     width: 1140px ;
-     text-align: center !important;
+     width: 1140px !important ;
     }
 }

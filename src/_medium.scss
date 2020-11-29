@@ -8,9 +8,7 @@
   .container{
     @include responsive-medium ;
   }
-  header{
-   background-color: red;
-  }
+  
 
   .fonctionnement{
   
@@ -23,12 +21,14 @@
   .fonctionnement-nav ol{
    display: flex;
    flex-direction: row;  
+   justify-content: center;
   }
  
   .fonctionnement li{
    margin-right: 1rem;
    margin-left: 1rem;
    width: 10rem;
+
   }
 
 
@@ -43,7 +43,7 @@
   }
 
   img.photos-restaurant{
-   width: 720px ;
+   width: 720px !important;
   }
 }
 
