@@ -88,6 +88,7 @@ margin-bottom: 2rem;
 @mixin box-shadow {
  box-shadow: 5px 10px 5px 0px #656565;
  border-radius: 20px;
+ background-color: white;
 }
    
 @mixin box-shadow-hover{
