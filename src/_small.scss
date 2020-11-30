@@ -1,28 +1,26 @@
 
 // 540px
-@media (min-width: 576px) and (max-width:767.98px)
-{
-    //PAGE ACCEUIL
+@media (min-width: 576px) and (max-width:767.98px){
 
-    
-   .container{  
-     @include responsive-small   
-    }
+  //PAGE ACCEUIL
+
+  .container{  
+   @include responsive-small   
+  }
    
-    .restaurants{  
-     background-color: blueviolet;
-    }
+  .restaurants{  
+   background-color: blueviolet;
+  }
 
-   // PAGES RESTAURANTS
+  // PAGES RESTAURANTS
 
-   .nav-menue{
-     width: 100%;
-    }
+  .nav-menue{
+   width: 100%;
+  }
 
-   img.photos-restaurant{
-     width: 540px !important;
-    }
-
+  img.photos-restaurant{
+   width: 540px !important;
+  }
 }
 
 

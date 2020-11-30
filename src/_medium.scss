@@ -4,14 +4,11 @@
 
 @media  (min-width: 768px) and (max-width:991.98px){
 
-
   .container{
-    @include responsive-medium ;
+   @include responsive-medium ;
   }
   
-
   .fonctionnement{
-  
     .fonctionnement-titre{
      margin-bottom: 2rem;
      margin-left: 3.5rem ;
@@ -30,7 +27,6 @@
    width: 10rem;
 
   }
-
 
   .restaurants{
    border-radius: 0% !important;

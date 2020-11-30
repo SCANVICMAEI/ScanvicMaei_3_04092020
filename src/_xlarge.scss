@@ -1,91 +1,85 @@
 
 // 1140 px
 
-@media (min-width: 1200px) {
+@media (min-width: 1200px){
 
  //PAGE ACCEUIL
 
+  .container{
+    @include responsive-xlarge;
+  }
 
-.container{
-  @include responsive-xlarge;
-}
 
-
-    .fonctionnement{
+  .fonctionnement{
      
-     .fonctionnement-titre{
-         margin-bottom: 2rem;
-         margin-left: 3.5rem ;
-        }
+    .fonctionnement-titre{
+     margin-bottom: 2rem;
+     margin-left: 3.5rem ;
     }
+  }
 
-   .fonctionnement-nav ol{
-     display: flex;
-     flex-direction: row;  
-     justify-content: center;
-    }
+  .fonctionnement-nav ol{
+   display: flex;
+   flex-direction: row;  
+   justify-content: center;
+  }
  
-   .fonctionnement li{
-     margin-right: 2.5rem;
-     margin-left: 2.5rem;
-     width: 15rem;
+  .fonctionnement li{
+   margin-right: 2.5rem;
+   margin-left: 2.5rem;
+   width: 15rem;
+  }
+
+  .restaurants{
+   flex-direction: row !important;
+   justify-content: space-around;
+   border-radius: 0% !important;
+    .restaurants-titre{
+     width: 100%;
+     margin-bottom: 2rem;
+     margin-left: 3.5rem ;
     }
+  }
 
+  .restaurants article{
+   width: 40% !important;  
+  }
 
-   .restaurants{
- 
-     flex-direction: row !important;
-     justify-content: space-around;
-     border-radius: 0% !important;
-        .restaurants-titre{
-         width: 100%;
-         margin-bottom: 2rem;
-         margin-left: 3.5rem ;
-        }
-    }
-
-   .restaurants article{
-     width: 40% !important;  
-    }
-
-   
-
-// PAGES RESTAURANTS
+ // PAGES RESTAURANTS
 
   .page-restaurants{
+   justify-content: center;
+  }
 
-     justify-content: center;
-    }
+  .nav-menue article{
+   width: 30rem !important;
+  }
 
-   .nav-menue article{
-     width: 30rem !important;
-    }
-
-   .nav-menue section{
-    width: 100%;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    }
+  .nav-menue section{
+   width: 100%;
+   align-items: center;
+   display: flex;
+   flex-direction: column;
+  }
   
-   .nav-menue h2{
-     width: 100% !important;
-     border-style: dotted !important;
-     border-top: none !important;
-     border-right: none !important;
-     border-left: none !important;
-     margin: auto !important;
-     margin-bottom: 2rem !important;
-     padding-bottom: 1rem !important ;
-     text-align: center;
-    }
+  .nav-menue h2{
+   width: 100% !important;
+   border-style: dotted !important;
+   border-top: none !important;
+   border-right: none !important;
+   border-left: none !important;
+   margin: auto !important;
+   margin-bottom: 2rem !important;
+   padding-bottom: 1rem !important ;
+   text-align: center;
+  }
   
-   .titres{
-     text-align: center;
-     width: 100%;
-    }
+  .titres{
+   text-align: center;
+   width: 100%;
+  }
 
-    img.photos-restaurant{
-     width: 1140px !important ;
-    }
+  img.photos-restaurant{
+   width: 1140px !important ;
+  }
 }

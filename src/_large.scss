@@ -5,98 +5,76 @@
 
  //PAGE ACCEUIL
 
+   .container{
+      @include responsive-large;
+    }
 
- .container{
-    @include responsive-large;
- }
-   
-   
-    .fonctionnement
-    {
-      
-
+    .fonctionnement{
         .fonctionnement-titre{
-            margin-bottom: 2rem;
-            margin-left: 3.5rem ;
+         margin-bottom: 2rem;
+         margin-left: 3.5rem ;
         }
     }
 
     .fonctionnement-nav ol{
-        display: flex;
-        flex-direction: row; 
-        justify-content: center; 
-       }
+     display: flex;
+     flex-direction: row; 
+     justify-content: center; 
+    }
      
-       .fonctionnement li{
-          margin-right: 1rem;
-           margin-left: 1rem;
-           width: 15rem;
-       }
+    .fonctionnement li{
+     margin-right: 1rem;
+     margin-left: 1rem;
+     width: 15rem;
+    }
     
-    
-
-    .restaurants{
-        
-        flex-direction: row !important;
-        justify-content: space-around;
-        border-radius: 0% !important;
-         
+    .restaurants{      
+     flex-direction: row !important;
+     justify-content: space-around;
+     border-radius: 0% !important; 
         .restaurants-titre{
-            width: 100%;
-            margin-bottom: 2rem;
-            margin-left: 3.5rem ;
+         width: 100%;
+         margin-bottom: 2rem;
+         margin-left: 3.5rem ;
         }
     }
     
 
     .restaurants article{
-        width: 40% !important;
-       
+     width: 40% !important;    
     }
-    
-   
-
-
-
-
-
-
-
-
-
+ 
  // PAGES RESTAURANTS
 
- 
- 
- .nav-menue article{
+    .nav-menue article{
      width: 30rem !important;
     }
 
- .nav-menue h2{
-    width: 100% !important;
-    border-style: dotted !important;
-    border-top: none !important;
-    border-right: none !important;
-    border-left: none !important;
-    margin: auto !important;
-    margin-bottom: 2rem !important;
-    padding-bottom: 1rem !important ;
-    text-align: center;
+    .nav-menue h2{
+     width: 100% !important;
+     border-style: dotted !important;
+     border-top: none !important;
+     border-right: none !important;
+     border-left: none !important;
+     margin: auto !important;
+     margin-bottom: 2rem !important;
+     padding-bottom: 1rem !important ;
+     text-align: center;
     }
   
- .nav-menue section{
+    .nav-menue section{
      width: 100%;
      align-items: center;
      display: flex;
      flex-direction: column;
     }
 
- .titres{
+    .titres{
      text-align: center;
      width: 100%;
     }
 
- img.photos-restaurant{
+    img.photos-restaurant{
      width: 960px !important;
     }
 
