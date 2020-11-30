@@ -24,24 +24,23 @@ h3{
 
 p
 {
-  margin-left: 1rem;
+ margin-left: 1rem;
 }
 
 a{
-  text-decoration: none;
-  color: black;
+ text-decoration: none;
+ color: black;
 }
 
 .container{
-  @include responsive-xsmall ;
+ @include responsive-xsmall ;
 }
 //header pages restaurants + page acc
 
-header {
-  flex-direction: row !important;
-  justify-content: center;
-  align-items: center; 
- 
+header{
+ flex-direction: row !important;
+ justify-content: center;
+ align-items: center; 
 }
 
 .logo{
@@ -89,8 +88,7 @@ header {
  text-align: center;
 }
 
-.button-pink
-{
+.button-pink{
  @include button-localisation;
  @include box-shadow;
  margin-top:2rem;
@@ -106,50 +104,48 @@ header {
 
 //section fonctionnement
 
-
 .fonctionnement{
   @include font-Roboto;
   flex-direction: column;
   flex-wrap: wrap;
   i{
-    margin-right: 1rem;
-    margin-left: 2.5rem;
-    color:grey ;
+   margin-right: 1rem;
+   margin-left: 2.5rem;
+   color:grey ;
   }
 
   h2{
-    font-weight: 900;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
+   font-weight: 900;
+   font-size: 1.5rem;
+   margin-bottom: 1rem;
+   margin-top: 1rem;
   }
 }
 
 .fonctionnement-nav{
   
-  
   li{
-    @include button-fonctionnement;
-    @include box-shadow;
-    counter-increment: li;
+   @include button-fonctionnement;
+   @include box-shadow;
+   counter-increment: li;
   }
   li::before {
-    content: counter(li); 
-    color:white;
-    background-color: $couleur-primaire;
-    text-align: center;
-    border-radius: 50%;
-    padding: 2.5px;
-    display: inline-block; 
-    width: 1em;
-    margin-left: -2em;
+   content: counter(li); 
+   color:white;
+   background-color: $couleur-primaire;
+   text-align: center;
+   border-radius: 50%;
+   padding: 2.5px;
+   display: inline-block; 
+   width: 1em;
+   margin-left: -2em;
   }
   ol {
-    list-style: none; counter-reset: li   
+   list-style: none; counter-reset: li   
   }
 }
 
-.fonctionnement-nav li:hover {  
+.fonctionnement-nav li:hover{  
   @include box-shadow-hover;
  background-color: rgba(147, 86, 220, 0.4);
  background-clip: padding-box;
@@ -160,11 +156,9 @@ header {
 
 }
 
-
-//section restaurants
+//section restaurants page acceuil
 
 .restaurants{
- 
   @include font-Roboto;
   padding-bottom: 2rem;
   align-items: center;
@@ -185,7 +179,7 @@ header {
    @include box-shadow;
   }
   img{
-    @include img-size;
+   @include img-size;
   }
 }
 
@@ -211,7 +205,6 @@ header {
  flex-direction: column;
  flex-wrap: wrap;
  height: 4rem;
- 
 }
 
 .restaurants-description i{
@@ -221,8 +214,6 @@ header {
  margin-top: 0.5rem;
  font-size: 1.3rem;
  text-align: right;
- 
-
   &:hover{   
    background-image: linear-gradient($couleur-primaire, $couleur-secondaire);
    background-clip : text;
@@ -239,74 +230,72 @@ header {
 }
 
 .restaurant-image-texte{
-  position: absolute;
-  top: 20%;
-  left: 75%;
-  background-color:#51c2a8;
-  color:#288a72 ;
-  padding: 5px;
+ position: absolute;
+ top: 20%;
+ left: 75%;
+ background-color:#51c2a8;
+ color:#288a72 ;
+ padding: 5px;
 }
 
 //footer
 
-.footer-container  {      
+.footer-container{      
  
-  height: 10rem;
-  background-color:black;
-  color: white;
-  display: flex;
-  flex-direction: column;
+ height: 10rem;
+ background-color:black;
+ color: white;
+ display: flex;
+ flex-direction: column;
   
   a{
-    color: white;
-    margin-top:0.5rem ;
-    margin-left: 1.5rem;
-    @include font-Roboto ;
-    &:hover{
-      background-image: linear-gradient($couleur-primaire, $couleur-secondaire);
-      -webkit-text-fill-color: transparent;
-      -webkit-background-clip:text;
-      background-clip : text;
-      transition-duration: 0.5s;
+   color: white;
+   margin-top:0.5rem ;
+   margin-left: 1.5rem;
+   @include font-Roboto ;
+   &:hover{
+     background-image: linear-gradient($couleur-primaire, $couleur-secondaire);
+     -webkit-text-fill-color: transparent;
+     -webkit-background-clip:text;
+     background-clip : text;
+     transition-duration: 0.5s;
     }
   }
 }
 
-.footer-container span {
-  margin-left: 1.5rem;
-  font-weight: 800;
-  font-size: large;
-  margin-top: 0.5rem;
-  margin-left: 1.2rem;
-  margin-bottom: 0.4rem;
-  @include font-Shrikhand;
+.footer-container span{
+ margin-left: 1.5rem;
+ font-weight: 800;
+ font-size: large;
+ margin-top: 0.5rem;
+ margin-left: 1.2rem;
+ margin-bottom: 0.4rem;
+ @include font-Shrikhand;
 }
 
 .fas.fa-utensils{
-  margin-right: 1rem;
+ margin-right: 1rem;
 }
 
 .fas.fa-hands-helping{
-  margin-right: 0.5rem;
+ margin-right: 0.5rem;
 }
-
 
 // PAGES RESTAURANTS x4
 
-.photos-restaurant {
-  
-  object-fit: cover;
-  height: 17rem;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right:auto;
-  } 
+.photos-restaurant{
+ object-fit: cover;
+ height: 17rem;
+ position: absolute;
+ left: 0;
+ right: 0;
+ margin-left: auto;
+ margin-right:auto;
+} 
 
-  img .photos-restaurant{
-    width: 90% !important;
-   }
+img .photos-restaurant{
+ width: 90% !important;
+}
 
 .titres{
  text-align: center;
@@ -317,25 +306,25 @@ header {
  padding-top: 2rem;
 }
 
-.titres i {
+.titres i{
   margin-left: 2.5rem;
   &:hover{   
-    background-image: linear-gradient($couleur-primaire, $couleur-secondaire);
-    background-clip : text;
-    -webkit-text-fill-color: transparent;
-    font-weight: 900;
-    transition-duration: 0.5s;  
-    }
+   background-image: linear-gradient($couleur-primaire, $couleur-secondaire);
+   background-clip : text;
+   -webkit-text-fill-color: transparent;
+   font-weight: 900;
+   transition-duration: 0.5s;  
+  }
 }
 
 
 .nav-menue h2{
-  border-bottom: 4px solid $couleur-tertiaire;
-  width: 10%;
-  padding-bottom: 0.4rem;
-  margin-bottom: 1rem;
-  @include font-Roboto;
-  font-size: 1rem;
+ border-bottom: 4px solid $couleur-tertiaire;
+ width: 10%;
+ padding-bottom: 0.4rem;
+ margin-bottom: 1rem;
+ @include font-Roboto;
+ font-size: 1rem;
 }
 
 .page-restaurants{
@@ -349,20 +338,18 @@ header {
 }
 
 .nav-menue{
-  width: 90%;
+ width: 90%;
 }
 
 article a{
- 
-  height: 4.5rem;
-  margin-bottom: 2rem;
-  border-radius: 1rem;
-  background-color: white;
-  justify-content: space-between;
-  display: flex; 
-  @include font-Roboto;
- 
- }
+ height: 4.5rem;
+ margin-bottom: 2rem;
+ border-radius: 1rem;
+ background-color: white;
+ justify-content: space-between;
+ display: flex; 
+ @include font-Roboto;
+}
 
 .nav-menue-prix{
  font-weight: bolder;
@@ -379,7 +366,7 @@ article a{
  text-overflow: ellipsis;
 }
 
-.nav-menue-description {
+.nav-menue-description{
  margin-left: 1rem;
  margin-top: 0;
  padding-bottom: 1rem;
@@ -400,7 +387,6 @@ article a{
  width: 90%;
  text-align: center;
  margin-top: 3.5rem;
-
   & a:hover{
    @include box-shadow-hover;
    background-clip: padding-box;
@@ -413,86 +399,84 @@ article a{
 
 //fondu menu
 .fondu1{
-  animation: fondu 1s;
+ animation: fondu 1s;
 }
 
 .fondu2{
-  animation: fondu 1.3s;
+ animation: fondu 1.3s;
 }
 
 .fondu3{
-  animation: fondu 1.6s;
+ animation: fondu 1.6s;
 }
 
 .fondu4{
-  animation: fondu 1.9s;
+ animation: fondu 1.9s;
 }
 
 .fondu5{
-  animation: fondu 2.2s;
+ animation: fondu 2.2s;
 }
 
 .fondu6{
-  animation: fondu 2.5s;
+ animation: fondu 2.5s;
 }
 
 .fondu7{
-  animation: fondu 2.8s;
+ animation: fondu 2.8s;
 }
 
 .fondu8{
-  animation: fondu 2.1s;
+ animation: fondu 2.1s;
 }
 
 .fondu9{
-  animation: fondu 2.4s;
+ animation: fondu 2.4s;
 }
 
 .fondu10{
-  animation: fondu 2.7s;
+ animation: fondu 2.7s;
 }
 
 @keyframes fondu{
-from{
-opacity: 0;
-}
-to{
-opacity: 1;
-}
+ from{
+   opacity: 0;
+  }
+ to{
+   opacity: 1;
+  }
 }
 
 // apparition bouton
  
+i.fas.fa-check-circle{
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ justify-content: center;
+ border-top-right-radius:1rem ;
+ border-bottom-right-radius: 1rem ;
+ color: white;
+ font-size: 1.5rem;
+}
 
-  i.fas.fa-check-circle {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  border-top-right-radius:1rem ;
-  border-bottom-right-radius: 1rem ;
-  color: white;
-  font-size: 1.5rem;
- }
-
-  .nav-menu-rotate{
-   background-color: $couleur-tertiaire;
-   border-top-right-radius:1rem ;
-   border-bottom-right-radius: 1rem ;
-   height:100%;
-   display: none;
-   justify-content: center;
-   animation: slide 0.5s;
-  }
+.nav-menu-rotate{
+ background-color: $couleur-tertiaire;
+ border-top-right-radius:1rem ;
+ border-bottom-right-radius: 1rem ;
+ height:100%;
+ display: none;
+ justify-content: center;
+ animation: slide 0.5s;
+}
 
 .nav-menue article:hover .nav-menu-rotate{
-  display: flex;
-  width: 4rem;
-  
+ display: flex;
+ width: 4rem; 
 }
-.nav-menue article:hover i.fas.fa-check-circle{
-  animation: rotate 0.5s;
 
+.nav-menue article:hover i.fas.fa-check-circle{
+ animation: rotate 0.5s;
 }
 
 @keyframes rotate{
@@ -500,145 +484,132 @@ opacity: 1;
    transform:rotate(90deg);   
   }
   to{
-    transform: rotate(360deg); 
+   transform: rotate(360deg); 
   }
-  }
+}
   
  
-
 @keyframes slide{ // pas mis en place encor 
   from{
-transform: translate(100%);
+   transform: translate(100%);
   }
   to{
-    transform: translate(0%);
+   transform: translate(0%);
   }
 }
 
 // loader
 
 .loader_container{
-background-color:#f2f2f2;
-overflow: hidden;
-animation-name: loader;
-animation-duration: 3s;
-height: 0vh;
-display: flex;
-justify-content: center;
-align-items: center;
+ background-color:#f2f2f2;
+ overflow: hidden;
+ animation-name: loader;
+ animation-duration: 3s;
+ height: 0vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
 }
-
 
 @keyframes loader{
   0%{
-height: 100vh;
+   height: 100vh;
   }
   99%{
-    height: 100vh;
+   height: 100vh;
   }
   100%{
-height: 0vh;
+   height: 0vh; 
   }
 }
 
 .loading-large{
-  border-top: 5px solid #9356DC !important;
-  border-bottom: 5px solid #FF79DA !important;
-  border: 5px solid #f2f2f2 ;
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  margin:auto;
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  animation: large 3s;
-  }
+ border-top: 5px solid #9356DC !important;
+ border-bottom: 5px solid #FF79DA !important;
+ border: 5px solid #f2f2f2 ;
+ width: 300px;
+ height: 300px;
+ border-radius: 50%;
+ margin:auto;
+ position: absolute;
+ left: 0;
+ top: 0;
+ bottom: 0;
+ right: 0;
+ animation: large 3s;
+}
   
-  .loading-medium{
-      border-top: 5px solid #9356DC !important;
-      border-bottom: 5px solid #99E2D0 !important;
-      border: 5px solid #f2f2f2;
-      width: 250px;
-      height: 250px;
-      border-radius: 50%;    
-     margin:auto;
-      position: absolute;
-      left: 0;
-      top: 0;
-      bottom: 0;
-      right: 0;  
-      animation: medium 3s;
-      }
+.loading-medium{
+ border-top: 5px solid #9356DC !important;
+ border-bottom: 5px solid #99E2D0 !important;
+ border: 5px solid #f2f2f2;
+ width: 250px;
+ height: 250px;
+ border-radius: 50%;    
+ margin:auto;
+ position: absolute;
+ left: 0;
+ top: 0;
+ bottom: 0;
+ right: 0;  
+ animation: medium 3s;
+}
       
-      .loading-small{
-          border-top: 5px solid #99E2D0 !important;
-          border-bottom: 5px solid #FF79DA !important;
-          border: 5px solid #f2f2f2;
-          width: 200px;
-          height: 200px;
-          border-radius: 50%;
-          margin:auto;
-          position: absolute;
-          left: 0;
-          top: 0;
-          bottom: 0;
-          right: 0;
-          animation: small 3s;
-          }
-          
-  
-          .loader_container img{
-          margin:auto;
-          position: absolute;
-          left: 0;
-          top: 0;
-          bottom: 0;
-          right: 0;
-          width: 7rem;
-          height: 2rem;
-          
-  }
-  
-  
-  /*animation*/
-  @keyframes small {
-      0%{
-          transform:rotate(0deg);
-         
-      }
-      100%{
-          transform: rotate(360deg);
-           
-          
-      }
-  }
-  
-  @keyframes medium {
-      0%{
-          transform:rotate(0deg);
-          
-      }
-      100%{
-          transform: rotate(180deg);
-        
-        
-      }
-  }
-  
-  @keyframes large {
-      0%{
-          transform:rotate(90deg);
+.loading-small{
+ border-top: 5px solid #99E2D0 !important;
+ border-bottom: 5px solid #FF79DA !important;
+ border: 5px solid #f2f2f2;
+ width: 200px;
+ height: 200px;
+ border-radius: 50%;
+ margin:auto;
+ position: absolute;
+ left: 0;
+ top: 0;
+ bottom: 0;
+ right: 0;
+ animation: small 3s;
+}
+            
+.loader_container img{
+ margin:auto;
+ position: absolute;
+ left: 0;
+ top: 0;
+ bottom: 0;
+ right: 0;
+ width: 7rem;
+ height: 2rem;         
+}
     
-      }
-      100%{
-          transform: rotate(0deg);
-        
-      }
-      
+/*animation*/
+
+@keyframes small{
+  0%{
+   transform:rotate(0deg);
   }
+  100%{
+   transform: rotate(360deg);      
+  }
+}
+  
+@keyframes medium{
+ 0%{
+   transform:rotate(0deg);     
+  }
+  100%{
+   transform: rotate(180deg);       
+  }
+}
+  
+@keyframes large{
+  0%{
+   transform:rotate(90deg);
+  }
+  100%{
+   transform: rotate(0deg);    
+  } 
+}
 
 
 
