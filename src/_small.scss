@@ -5,16 +5,13 @@
   //PAGE ACCEUIL
 
   .container{  
-   @include responsive-small   
+   @include responsive-small;  
+  
   }
-   
-  .restaurants{  
-   background-color: blueviolet;
-  }
-
+  
   // PAGES RESTAURANTS
 
-  .nav-menue{
+  .nav-menu{
    width: 100%;
   }
 

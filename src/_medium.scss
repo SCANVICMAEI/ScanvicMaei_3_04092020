@@ -22,10 +22,17 @@
   }
  
   .fonctionnement li{
-   margin-right: 1rem;
-   margin-left: 1rem;
-   width: 10rem;
+   margin-right: 1rem ;
+   margin-left: 1rem ;
+   width: 11rem;
+  }
 
+  .fonctionnement-nav a{
+   font-size: 12px;
+  }
+
+  .fonctionnement i{
+   margin-left: 1rem !important;
   }
 
   .restaurants{
@@ -34,7 +41,7 @@
 
   // PAGES RESTAURANTS
 
-  .nav-menue{
+  .nav-menu{
    width: 100%;
   }
 

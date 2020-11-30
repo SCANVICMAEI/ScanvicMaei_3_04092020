@@ -2,7 +2,7 @@
 // MIXINS RESPONSIVE
 
 @mixin responsive-xsmall {
- width: 90%;
+ width: 90% !important;
  margin: auto;
  display: flex;
  flex-direction: column;

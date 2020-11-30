@@ -1,13 +1,13 @@
 
 // Mobile first xsmall 
 
-@import "../src/_mixin";
-@import "../src/_variables";
+@import "src/_mixin";
+@import "src/_variables";
 
-@import "../src/_small.scss";
-@import "../src/_medium.scss";
-@import "../src/_large.scss";
-@import "../src/_xlarge.scss";
+@import "src/_small.scss";
+@import "src/_medium.scss";
+@import "src/_large.scss";
+@import "src/_xlarge.scss";
 
 //PAGE ACCEUIL
 
@@ -33,8 +33,9 @@ a{
 }
 
 .container{
- @include responsive-xsmall ;
+ @include responsive-xsmall;
 }
+
 //header pages restaurants + page acc
 
 header{
@@ -318,8 +319,7 @@ img .photos-restaurant{
   }
 }
 
-
-.nav-menue h2{
+.nav-menu h2{
  border-bottom: 4px solid $couleur-tertiaire;
  width: 10%;
  padding-bottom: 0.4rem;
@@ -338,7 +338,7 @@ img .photos-restaurant{
  position: relative;
 }
 
-.nav-menue{
+.nav-menu{
  width: 90%;
 }
 
@@ -352,22 +352,26 @@ article a{
  @include font-Roboto;
 }
 
-.nav-menue-prix{
+.nav-menu-bloc{
+ overflow: hidden;
+}
+
+.nav-menu-prix{
  font-weight: bolder;
- margin-bottom: 0.7rem;
+ margin-bottom: 1rem;
  align-items: flex-end;
  display: flex;
  margin-right: 2rem;
 }
 
-.nav-menue div{
+.nav-menu div{
  padding-top: 0.5rem;
  white-space: nowrap;
  overflow: hidden;
  text-overflow: ellipsis;
 }
 
-.nav-menue-description{
+.nav-menu-description{
  margin-left: 1rem;
  margin-top: 0;
  padding-bottom: 1rem;
@@ -469,14 +473,15 @@ i.fas.fa-check-circle{
  display: none;
  justify-content: center;
  animation: slide 0.5s;
+ overflow: hidden;
 }
 
-.nav-menue article:hover .nav-menu-rotate{
+.nav-menu article:hover .nav-menu-rotate{
  display: flex;
  width: 4rem; 
 }
 
-.nav-menue article:hover i.fas.fa-check-circle{
+.nav-menu article:hover i.fas.fa-check-circle{
  animation: rotate 0.5s;
 }
 
@@ -507,20 +512,26 @@ i.fas.fa-check-circle{
  animation-name: loader;
  animation-duration: 3s;
  height: 0vh;
- display: flex;
  justify-content: center;
  align-items: center;
+ animation-fill-mode: both;
+ position: relative;
 }
 
 @keyframes loader{
   0%{
    height: 100vh;
+  opacity: 1;
   }
   99%{
    height: 100vh;
+   opacity: 1;
   }
   100%{
    height: 0vh; 
+   display: none;
+   opacity: 0;
+   z-index: -1000;
   }
 }
 
