@@ -818,9 +818,8 @@ i.fas.fa-check-circle {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-transition: 1s linear;
-  transition: 1s linear;
-  overflow: hidden;
+  -webkit-animation: slide 0.5s;
+          animation: slide 0.5s;
 }
 
 .nav-menue article:hover .nav-menu-rotate {
@@ -831,8 +830,8 @@ i.fas.fa-check-circle {
 }
 
 .nav-menue article:hover i.fas.fa-check-circle {
-  -webkit-animation: rotate 0.4s;
-          animation: rotate 0.4s;
+  -webkit-animation: rotate 0.5s;
+          animation: rotate 0.5s;
 }
 
 @-webkit-keyframes rotate {
@@ -857,6 +856,28 @@ i.fas.fa-check-circle {
   }
 }
 
+@-webkit-keyframes slide {
+  from {
+    -webkit-transform: translate(100%);
+            transform: translate(100%);
+  }
+  to {
+    -webkit-transform: translate(0%);
+            transform: translate(0%);
+  }
+}
+
+@keyframes slide {
+  from {
+    -webkit-transform: translate(100%);
+            transform: translate(100%);
+  }
+  to {
+    -webkit-transform: translate(0%);
+            transform: translate(0%);
+  }
+}
+
 .loader_container {
   background-color: #f2f2f2;
   overflow: hidden;
@@ -864,39 +885,16 @@ i.fas.fa-check-circle {
           animation-name: loader;
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
-  width: 100vw;
   height: 0vh;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-@-webkit-keyframes loader {
-  0% {
-    height: 100vh;
-  }
-  99% {
-    height: 100vh;
-  }
-  100% {
-    height: 0vh;
-  }
-}
-
-@keyframes loader {
-  0% {
-    height: 100vh;
-  }
-  99% {
-    height: 100vh;
-  }
-  100% {
-    height: 0vh;
-  }
 }
 
 .loading-large {
@@ -970,6 +968,7 @@ i.fas.fa-check-circle {
   100% {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
+    display: none;
   }
 }
 @keyframes small {
@@ -980,6 +979,7 @@ i.fas.fa-check-circle {
   100% {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
+    display: none;
   }
 }
 
