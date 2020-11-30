@@ -1,13 +1,13 @@
 
 // Mobile first xsmall 
 
-@import "src/_mixin";
-@import "src/_variables";
+@import "../src/_mixin";
+@import "../src/_variables";
 
-@import "src/_small.scss";
-@import "src/_medium.scss";
-@import "src/_large.scss";
-@import "src/_xlarge.scss";
+@import "../src/_small.scss";
+@import "../src/_medium.scss";
+@import "../src/_large.scss";
+@import "../src/_xlarge.scss";
 
 //PAGE ACCEUIL
 
@@ -291,6 +291,7 @@ header{
  right: 0;
  margin-left: auto;
  margin-right:auto;
+ width: 90%;
 } 
 
 img .photos-restaurant{
