@@ -1,7 +1,6 @@
 
 // Mobile first xsmall 
 
-
 @import "src/_mixin";
 @import "src/_variables";
 
@@ -9,9 +8,6 @@
 @import "src/_medium.scss";
 @import "src/_large.scss";
 @import "src/_xlarge.scss";
-
-
-//loader
 
 //PAGE ACCEUIL
 
@@ -519,23 +515,7 @@ transform: translate(100%);
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // loader
-
 
 .loader_container{
 background-color:#f2f2f2;
@@ -546,6 +526,19 @@ height: 0vh;
 display: flex;
 justify-content: center;
 align-items: center;
+}
+
+
+@keyframes loader{
+  0%{
+height: 100vh;
+  }
+  99%{
+    height: 100vh;
+  }
+  100%{
+height: 0vh;
+  }
 }
 
 .loading-large{
@@ -618,7 +611,7 @@ align-items: center;
       }
       100%{
           transform: rotate(360deg);
-            display: none;
+           
           
       }
   }
