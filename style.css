@@ -942,7 +942,7 @@ i.fas.fa-check-circle {
 
 .loading-large {
   border-top: 5px solid #9356DC !important;
-  border-bottom: 5px solid #FF79DA !important;
+  border-bottom: 5px solid #9356DC !important;
   border: 5px solid #f2f2f2;
   width: 300px;
   height: 300px;
@@ -958,7 +958,7 @@ i.fas.fa-check-circle {
 }
 
 .loading-medium {
-  border-top: 5px solid #9356DC !important;
+  border-top: 5px solid #99E2D0 !important;
   border-bottom: 5px solid #99E2D0 !important;
   border: 5px solid #f2f2f2;
   width: 250px;
@@ -975,7 +975,7 @@ i.fas.fa-check-circle {
 }
 
 .loading-small {
-  border-top: 5px solid #99E2D0 !important;
+  border-top: 5px solid #FF79DA !important;
   border-bottom: 5px solid #FF79DA !important;
   border: 5px solid #f2f2f2;
   width: 200px;
@@ -1002,7 +1002,6 @@ i.fas.fa-check-circle {
   height: 2rem;
 }
 
-/*animation*/
 @-webkit-keyframes small {
   0% {
     -webkit-transform: rotate(0deg);
@@ -1013,6 +1012,7 @@ i.fas.fa-check-circle {
             transform: rotate(360deg);
   }
 }
+
 @keyframes small {
   0% {
     -webkit-transform: rotate(0deg);

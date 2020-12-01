@@ -11,7 +11,7 @@
 
 //PAGE ACCEUIL
 
-//commun
+//CSS COMMUN PAGE ACCEUIL ET PAGES RESTAURANTS
 
 
 h3{
@@ -36,7 +36,7 @@ a{
  @include responsive-xsmall;
 }
 
-//header pages restaurants + page acc
+//HEADER PAGE ACCEUIL ET PAGES RESTAURANT
 
 header{
  flex-direction: row !important;
@@ -52,7 +52,7 @@ header{
  margin-left: 2rem;
 }
 
-//section localisation 
+//PAGE ACCEUIL SECTION LOCALISATION 
 
 .localisation{
  align-items: center;
@@ -103,7 +103,7 @@ header{
   }
 }
 
-//section fonctionnement
+//PAGE ACCEUIL SECTION FONCTIONNEMENT
 
 .fonctionnement{
   @include font-Roboto;
@@ -157,7 +157,7 @@ header{
 
 }
 
-//section restaurants page acceuil
+//PAGE ACCEUIL SECTION RESTAURANTS
 
 .restaurants{
   @include font-Roboto;
@@ -190,14 +190,15 @@ header{
  width: 90%;
  height: 12rem;
  margin-bottom: 2rem;
+ 
  &:hover{
    @include box-shadow-hover;
  }
 }
 
 .restaurants-article{
- display: flex;
- flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .restaurants-description
@@ -239,7 +240,7 @@ header{
  padding: 5px;
 }
 
-//footer
+//PAGE ACCEUIL ET PAGES RESTAURANTS FOOTER
 
 .footer-container{      
  
@@ -282,7 +283,7 @@ header{
  margin-right: 0.5rem;
 }
 
-// PAGES RESTAURANTS x4
+// PAGES RESTAURANTS X4
 
 .photos-restaurant{
  object-fit: cover;
@@ -400,9 +401,10 @@ article a{
   }
 }
  
-//teste animation 
+//ANIMATIONS
 
-//fondu menu
+//FONDU MENU PAGES RESTAURANTS
+
 .fondu1{
  animation: fondu 1s;
 }
@@ -452,7 +454,7 @@ article a{
   }
 }
 
-// apparition bouton
+// PAGES RESTAURANTS BOUTONS ROTATE
  
 i.fas.fa-check-circle{
  display: flex;
@@ -494,8 +496,7 @@ i.fas.fa-check-circle{
   }
 }
   
- 
-@keyframes slide{ // pas mis en place encor 
+@keyframes slide{ 
   from{
    transform: translate(100%);
   }
@@ -504,7 +505,7 @@ i.fas.fa-check-circle{
   }
 }
 
-// loader
+// LOADER SPINNER
 
 .loader_container{
  background-color:#f2f2f2;
@@ -537,7 +538,7 @@ i.fas.fa-check-circle{
 
 .loading-large{
  border-top: 5px solid #9356DC !important;
- border-bottom: 5px solid #FF79DA !important;
+ border-bottom: 5px solid #9356DC !important;
  border: 5px solid #f2f2f2 ;
  width: 300px;
  height: 300px;
@@ -552,7 +553,7 @@ i.fas.fa-check-circle{
 }
   
 .loading-medium{
- border-top: 5px solid #9356DC !important;
+ border-top: 5px solid #99E2D0 !important;
  border-bottom: 5px solid #99E2D0 !important;
  border: 5px solid #f2f2f2;
  width: 250px;
@@ -568,7 +569,7 @@ i.fas.fa-check-circle{
 }
       
 .loading-small{
- border-top: 5px solid #99E2D0 !important;
+ border-top: 5px solid #FF79DA !important;
  border-bottom: 5px solid #FF79DA !important;
  border: 5px solid #f2f2f2;
  width: 200px;
@@ -594,7 +595,6 @@ i.fas.fa-check-circle{
  height: 2rem;         
 }
     
-/*animation*/
 
 @keyframes small{
   0%{
