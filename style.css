@@ -447,6 +447,10 @@ header {
   color: #9356DC;
 }
 
+.fonctionnement-nav {
+  padding-left: 7px;
+}
+
 .restaurants {
   font-family: 'Roboto', sans-serif;
   padding-bottom: 2rem;
