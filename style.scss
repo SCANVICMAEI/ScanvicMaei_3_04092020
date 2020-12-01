@@ -33,7 +33,7 @@ a{
 }
 
 .container{
- @include responsive-xsmall;
+@include responsive-xsmall;
 }
 
 //HEADER PAGE ACCEUIL ET PAGES RESTAURANT
@@ -75,7 +75,7 @@ header{
   }
 }
 
-.localisation h2{
+.localisation-texte h2{
  width: 60%;
  text-align: center;
  font-weight: 900;;
@@ -84,9 +84,16 @@ header{
  margin-top: 1rem;
 }
 
-.localisation span{
+.localisation-texte span{
  width: 70%;
  text-align: center;
+}
+
+.localisation-texte{
+  margin:auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .button-pink{
@@ -109,6 +116,8 @@ header{
   @include font-Roboto;
   flex-direction: column;
   flex-wrap: wrap;
+  width: 90%;
+  margin: auto;
   i{
    margin-right: 1rem;
    margin-left: 2.5rem;
@@ -129,6 +138,8 @@ header{
    @include button-fonctionnement;
    @include box-shadow;
    counter-increment: li;
+   display: flex;
+   align-items: center;
   }
   li::before {
    content: counter(li); 
@@ -146,6 +157,10 @@ header{
   }
 }
 
+.fonctionnement-nav a{
+  display: flex;
+  align-items: center;
+}
 .fonctionnement-nav li:hover{  
   @include box-shadow-hover;
  background-color: rgba(147, 86, 220, 0.4);
@@ -233,11 +248,15 @@ header{
 
 .restaurant-image-texte{
  position: absolute;
- top: 20%;
- left: 75%;
- background-color:#51c2a8;
- color:#288a72 ;
- padding: 5px;
+ top: 10px;
+ right: 10px;
+ background-color:#99e2d0;
+ color:#008766;
+ padding-top: 5px;
+ padding-bottom: 5px;
+ padding-left:9px ;
+ padding-right: 9px;
+ border-radius: 4px;
 }
 
 //PAGE ACCEUIL ET PAGES RESTAURANTS FOOTER
@@ -245,7 +264,7 @@ header{
 .footer-container{      
  
  height: 10rem;
- background-color:black;
+ background-color:#353535;
  color: white;
  display: flex;
  flex-direction: column;
@@ -269,7 +288,7 @@ header{
  margin-left: 1.5rem;
  font-weight: 800;
  font-size: large;
- margin-top: 0.5rem;
+ margin-top: 1.2rem;
  margin-left: 1.2rem;
  margin-bottom: 0.4rem;
  @include font-Shrikhand;
@@ -293,7 +312,7 @@ header{
  right: 0;
  margin-left: auto;
  margin-right:auto;
- width: 90%;
+ width: 100%;
 } 
 
 img .photos-restaurant{
@@ -315,6 +334,7 @@ img .photos-restaurant{
    background-image: linear-gradient($couleur-primaire, $couleur-secondaire);
    background-clip : text;
    -webkit-text-fill-color: transparent;
+   -webkit-background-clip: text; 
    font-weight: 900;
    transition-duration: 0.5s;  
   }
@@ -481,6 +501,7 @@ i.fas.fa-check-circle{
 .nav-menu article:hover .nav-menu-rotate{
  display: flex;
  width: 4rem; 
+ flex-shrink: 0;
 }
 
 .nav-menu article:hover i.fas.fa-check-circle{

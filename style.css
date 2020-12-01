@@ -1,6 +1,6 @@
 @media (min-width: 576px) and (max-width: 767.98px) {
   .container {
-    width: 540px !important;
+    width: 540px;
     margin: auto;
     padding: 0;
     display: -webkit-box;
@@ -16,14 +16,11 @@
   .nav-menu {
     width: 100%;
   }
-  img.photos-restaurant {
-    width: 540px !important;
-  }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
   .container {
-    width: 720px !important;
+    width: 720px;
     margin: auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -68,14 +65,11 @@
   .nav-menu {
     width: 100%;
   }
-  img.photos-restaurant {
-    width: 720px !important;
-  }
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .container {
-    width: 960px !important;
+    width: 960px;
     margin: auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -152,14 +146,11 @@
     text-align: center;
     width: 100%;
   }
-  img.photos-restaurant {
-    width: 960px !important;
-  }
 }
 
 @media (min-width: 1200px) {
   .container {
-    width: 1140px !important;
+    width: 1140px;
     margin: auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -245,9 +236,6 @@
     text-align: center;
     width: 100%;
   }
-  img.photos-restaurant {
-    width: 1140px !important;
-  }
 }
 
 h3 {
@@ -268,7 +256,7 @@ a {
 }
 
 .container {
-  width: 90% !important;
+  width: 100%;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -323,7 +311,7 @@ header {
   color: black;
 }
 
-.localisation h2 {
+.localisation-texte h2 {
   width: 60%;
   text-align: center;
   font-weight: 900;
@@ -332,9 +320,23 @@ header {
   margin-top: 1rem;
 }
 
-.localisation span {
+.localisation-texte span {
   width: 70%;
   text-align: center;
+}
+
+.localisation-texte {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .button-pink {
@@ -370,6 +372,8 @@ header {
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  width: 90%;
+  margin: auto;
 }
 
 .fonctionnement i {
@@ -395,6 +399,12 @@ header {
   border-radius: 20px;
   background-color: white;
   counter-increment: li;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .fonctionnement-nav li::before {
@@ -412,6 +422,15 @@ header {
 .fonctionnement-nav ol {
   list-style: none;
   counter-reset: li;
+}
+
+.fonctionnement-nav a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .fonctionnement-nav li:hover {
@@ -532,16 +551,20 @@ header {
 
 .restaurant-image-texte {
   position: absolute;
-  top: 20%;
-  left: 75%;
-  background-color: #51c2a8;
-  color: #288a72;
-  padding: 5px;
+  top: 10px;
+  right: 10px;
+  background-color: #99e2d0;
+  color: #008766;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 9px;
+  padding-right: 9px;
+  border-radius: 4px;
 }
 
 .footer-container {
   height: 10rem;
-  background-color: black;
+  background-color: #353535;
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -573,7 +596,7 @@ header {
   margin-left: 1.5rem;
   font-weight: 800;
   font-size: large;
-  margin-top: 0.5rem;
+  margin-top: 1.2rem;
   margin-left: 1.2rem;
   margin-bottom: 0.4rem;
   font-family: 'Shrikhand' , sans-serif;
@@ -597,7 +620,7 @@ header {
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  width: 90%;
+  width: 100%;
 }
 
 img .photos-restaurant {
@@ -622,6 +645,7 @@ img .photos-restaurant {
   background-image: linear-gradient(#9356DC, #FF79DA);
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
   font-weight: 900;
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
@@ -836,6 +860,8 @@ i.fas.fa-check-circle {
   display: -ms-flexbox;
   display: flex;
   width: 4rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 .nav-menu article:hover i.fas.fa-check-circle {
